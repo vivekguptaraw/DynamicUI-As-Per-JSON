@@ -1,0 +1,22 @@
+
+[ "objects" :
+    [
+        "imageview": [
+            "portionCovered": "40%",
+            "number": 1,
+            "url": "logo.jgp",
+            "number" : 1,
+            "portionCovered": "20%",
+            "sideSpacing": 40,
+            "childrens":{"v1": 1}
+        ],
+        "label":[
+            "number": 2,
+            "text": "kbsvbbgbgb ggpp"
+        ],
+        "button":[
+            "number": 3,
+            "text": "buttonText"
+        ]
+    ]
+]
