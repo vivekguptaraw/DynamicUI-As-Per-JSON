@@ -24,6 +24,17 @@
 		E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0AD208F02BF00E91C45 /* Alignable.swift */; };
 		E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0B4208F1A4E00E91C45 /* DynamicViewController.swift */; };
 		E2851542208DCC4D008ADF34 /* WithoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2851541208DCC4D008ADF34 /* WithoutCollectionViewController.swift */; };
+		E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DB920A5C05100F6D6EA /* BiDirectionalViewController.swift */; };
+		E2858DC520A5C05200F6D6EA /* horizontalFLowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DBA20A5C05100F6D6EA /* horizontalFLowLayout.swift */; };
+		E2858DC620A5C05200F6D6EA /* HRScrollDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DBB20A5C05100F6D6EA /* HRScrollDemo.swift */; };
+		E2858DC720A5C05200F6D6EA /* HRScrollTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DBC20A5C05100F6D6EA /* HRScrollTableView.swift */; };
+		E2858DC820A5C05200F6D6EA /* LeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DBD20A5C05100F6D6EA /* LeftTableViewCell.swift */; };
+		E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2858DBE20A5C05100F6D6EA /* LeftTableViewCell.xib */; };
+		E2858DCA20A5C05200F6D6EA /* RightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DBF20A5C05100F6D6EA /* RightCollectionViewCell.swift */; };
+		E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2858DC020A5C05100F6D6EA /* RightCollectionViewCell.xib */; };
+		E2858DCC20A5C05200F6D6EA /* RightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DC120A5C05100F6D6EA /* RightTableViewCell.swift */; };
+		E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2858DC220A5C05100F6D6EA /* RightTableViewCell.xib */; };
+		E2858DCE20A5C05200F6D6EA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DC320A5C05100F6D6EA /* UITableView+Extension.swift */; };
 		E28B7A1720A05055005E4871 /* WithoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B7A1620A05055005E4871 /* WithoutTableViewController.swift */; };
 		E2A2C6A1209AD75B00FDE5DA /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A2C6A0209AD75B00FDE5DA /* SliderViewController.swift */; };
 		E2E161262087588E00F5B9CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E161252087588E00F5B9CE /* AppDelegate.swift */; };
@@ -53,6 +64,17 @@
 		E26AA0AD208F02BF00E91C45 /* Alignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alignable.swift; sourceTree = "<group>"; };
 		E26AA0B4208F1A4E00E91C45 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 		E2851541208DCC4D008ADF34 /* WithoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutCollectionViewController.swift; sourceTree = "<group>"; };
+		E2858DB920A5C05100F6D6EA /* BiDirectionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiDirectionalViewController.swift; sourceTree = "<group>"; };
+		E2858DBA20A5C05100F6D6EA /* horizontalFLowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = horizontalFLowLayout.swift; sourceTree = "<group>"; };
+		E2858DBB20A5C05100F6D6EA /* HRScrollDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRScrollDemo.swift; sourceTree = "<group>"; };
+		E2858DBC20A5C05100F6D6EA /* HRScrollTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRScrollTableView.swift; sourceTree = "<group>"; };
+		E2858DBD20A5C05100F6D6EA /* LeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTableViewCell.swift; sourceTree = "<group>"; };
+		E2858DBE20A5C05100F6D6EA /* LeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTableViewCell.xib; sourceTree = "<group>"; };
+		E2858DBF20A5C05100F6D6EA /* RightCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2858DC020A5C05100F6D6EA /* RightCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightCollectionViewCell.xib; sourceTree = "<group>"; };
+		E2858DC120A5C05100F6D6EA /* RightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightTableViewCell.swift; sourceTree = "<group>"; };
+		E2858DC220A5C05100F6D6EA /* RightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightTableViewCell.xib; sourceTree = "<group>"; };
+		E2858DC320A5C05100F6D6EA /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E28B7A1620A05055005E4871 /* WithoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutTableViewController.swift; sourceTree = "<group>"; };
 		E2A2C6A0209AD75B00FDE5DA /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		E2E161222087588E00F5B9CE /* DynamicUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +130,24 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		E2858DB820A5C05100F6D6EA /* TwoWayTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E2858DB920A5C05100F6D6EA /* BiDirectionalViewController.swift */,
+				E2858DBA20A5C05100F6D6EA /* horizontalFLowLayout.swift */,
+				E2858DBB20A5C05100F6D6EA /* HRScrollDemo.swift */,
+				E2858DBC20A5C05100F6D6EA /* HRScrollTableView.swift */,
+				E2858DBD20A5C05100F6D6EA /* LeftTableViewCell.swift */,
+				E2858DBE20A5C05100F6D6EA /* LeftTableViewCell.xib */,
+				E2858DBF20A5C05100F6D6EA /* RightCollectionViewCell.swift */,
+				E2858DC020A5C05100F6D6EA /* RightCollectionViewCell.xib */,
+				E2858DC120A5C05100F6D6EA /* RightTableViewCell.swift */,
+				E2858DC220A5C05100F6D6EA /* RightTableViewCell.xib */,
+				E2858DC320A5C05100F6D6EA /* UITableView+Extension.swift */,
+			);
+			path = TwoWayTableView;
+			sourceTree = "<group>";
+		};
 		E28B7A1520A0502A005E4871 /* WithoutTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +177,7 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2858DB820A5C05100F6D6EA /* TwoWayTableView */,
 				E28B7A1520A0502A005E4871 /* WithoutTable */,
 				E26AA0A7208F023800E91C45 /* Protocols */,
 				E2E161252087588E00F5B9CE /* AppDelegate.swift */,
@@ -223,6 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
+				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
+				E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */,
 				E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */,
 				E2E161332087588E00F5B9CE /* LaunchScreen.storyboard in Resources */,
 				E2E161302087588E00F5B9CE /* Assets.xcassets in Resources */,
@@ -287,20 +331,28 @@
 			files = (
 				E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */,
 				E26AA0B0208F02BF00E91C45 /* Groupable.swift in Sources */,
+				E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */,
 				E26AA0B1208F02BF00E91C45 /* Enums.swift in Sources */,
 				E262C19F20887E1700FBABC7 /* ScreenViewController.swift in Sources */,
 				E28B7A1720A05055005E4871 /* WithoutTableViewController.swift in Sources */,
+				E2858DC720A5C05200F6D6EA /* HRScrollTableView.swift in Sources */,
 				E26AA0B2208F02BF00E91C45 /* Anchorable.swift in Sources */,
 				E26806352091DD3B00F201CA /* jsonObjectsClass.swift in Sources */,
 				E2A2C6A1209AD75B00FDE5DA /* SliderViewController.swift in Sources */,
 				E2E1612E2087588E00F5B9CE /* DynamicUIDemo.xcdatamodeld in Sources */,
+				E2858DC820A5C05200F6D6EA /* LeftTableViewCell.swift in Sources */,
 				E262C1A1208894C900FBABC7 /* DynamicCollectionViewCell.swift in Sources */,
 				E26AA0AF208F02BF00E91C45 /* Frameable.swift in Sources */,
 				E26663DA2089B0860045437F /* DataManager.swift in Sources */,
 				E262C1A32088966100FBABC7 /* ControlCreateModel.swift in Sources */,
 				E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */,
 				E2E161282087588E00F5B9CE /* ViewController.swift in Sources */,
+				E2858DC620A5C05200F6D6EA /* HRScrollDemo.swift in Sources */,
 				E26806372091F7F700F201CA /* CustomGeneratedView.swift in Sources */,
+				E2858DCC20A5C05200F6D6EA /* RightTableViewCell.swift in Sources */,
+				E2858DC520A5C05200F6D6EA /* horizontalFLowLayout.swift in Sources */,
+				E2858DCA20A5C05200F6D6EA /* RightCollectionViewCell.swift in Sources */,
+				E2858DCE20A5C05200F6D6EA /* UITableView+Extension.swift in Sources */,
 				E26806332091D79F00F201CA /* TableViewCustomController.swift in Sources */,
 				E2E161262087588E00F5B9CE /* AppDelegate.swift in Sources */,
 				E26AA0AE208F02BF00E91C45 /* Extensions.swift in Sources */,

@@ -26,7 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Mark: Using TableView
         /////////////////////self.window?.rootViewController = UINavigationController(rootViewController: TableViewCustomController())
         //Mark: Using ViewController
-        self.window?.rootViewController = UINavigationController(rootViewController: WithoutTableViewController())
+        //self.window?.rootViewController = UINavigationController(rootViewController: WithoutTableViewController())
+        //Mark: Bidirectional TableViews Demo
+        self.window?.rootViewController = UINavigationController(rootViewController: HRScrollDemo())
         self.window?.makeKeyAndVisible()
         return true
     }
