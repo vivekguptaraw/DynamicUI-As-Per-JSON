@@ -58,8 +58,8 @@ class HRScrollTableView: UIView, UITableViewDelegate, UITableViewDataSource, NSF
         self.leftTable.tableFooterView = UIView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: self.leftTable.frame.width, height: 1)))
         self.rightTable.tableFooterView = UIView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: self.rightTable.frame.width, height: 1)))
         
-        self.leftTable.tag  = 2300
-        self.rightTable.tag = 2388
+        self.leftTable.tag  = 100
+        self.rightTable.tag = 101
         
         self.leftTable.showsHorizontalScrollIndicator   = false
         self.rightTable.showsHorizontalScrollIndicator  = false

@@ -997,7 +997,7 @@ let jsonObject: [String: [[String: Any]]] =
         ]
 ]
 
-
+let sectionHeaderArray: [String] = ["Avg", "3P","Avg1", "3P1","Avg2", "3P2","Avg3", "3P3","Avg4", "3P4"]
 let arrayForBirectional: [String:Any ] = [
     "first":[1,2,3,4,5,6,7,8,9,10],
     "second":[2,4,5,6,7,8,9,1,2,10],

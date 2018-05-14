@@ -21,12 +21,11 @@ class RightTableViewCell: UITableViewCell {
     var indexPath = IndexPath()
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.collectionView.register(RightCollectionViewCell.self)
-        
+        self.collectionView.register(RightCollectionViewCell.self)        
         //MARK: Layout applied
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal //.horizontal
-        layout.itemSize = CGSize(width: 50, height: 50)
+        layout.itemSize = CGSize(width: rightCollectionViewCellSize, height: 50)
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.minimumLineSpacing = 0.0
         layout.minimumInteritemSpacing = 0.0
@@ -37,10 +36,10 @@ class RightTableViewCell: UITableViewCell {
     func setCollectionViewDataSourceDelegate
         <D: UICollectionViewDataSource & UICollectionViewDelegate & UIScrollViewDelegate>
         (dataSourceDelegate: D, forRow row: Int) {
-        //MARK: Scroll delegate applied
-        (collectionView as UIScrollView).delegate = dataSourceDelegate
-        collectionView.bounces = true
-        (collectionView as UIScrollView).decelerationRate = UIScrollViewDecelerationRateFast
+//        //MARK: Scroll delegate applied
+//        (collectionView as UIScrollView).delegate = dataSourceDelegate
+//        collectionView.bounces = true
+//        (collectionView as UIScrollView).decelerationRate = UIScrollViewDecelerationRateFast
         collectionView.delegate = dataSourceDelegate
         collectionView.dataSource = dataSourceDelegate
         collectionView.tag = row

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C0E062FDE6DADE97AB669C21 /* Pods_DynamicUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1FEA4D53DE5BBA2F62C5F2 /* Pods_DynamicUIDemo.framework */; };
+		E21D7AA520A9672300BBF8C8 /* RightTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */; };
+		E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21D7AA620A9684A00BBF8C8 /* RightTableHeaderView.xib */; };
 		E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */ = {isa = PBXBuildFile; fileRef = E262C19C2088744D00FBABC7 /* UIdataJson.json */; };
 		E262C19F20887E1700FBABC7 /* ScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262C19E20887E1700FBABC7 /* ScreenViewController.swift */; };
 		E262C1A1208894C900FBABC7 /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262C1A0208894C900FBABC7 /* DynamicCollectionViewCell.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		B90C3D56F104C7E51E5C2BC8 /* Pods-DynamicUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DCF3A09F84ADB03B6C40ED18 /* Pods-DynamicUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTableHeaderView.swift; sourceTree = "<group>"; };
+		E21D7AA620A9684A00BBF8C8 /* RightTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightTableHeaderView.xib; sourceTree = "<group>"; };
 		E262C19C2088744D00FBABC7 /* UIdataJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UIdataJson.json; sourceTree = "<group>"; };
 		E262C19E20887E1700FBABC7 /* ScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenViewController.swift; sourceTree = "<group>"; };
 		E262C1A0208894C900FBABC7 /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -117,6 +121,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ShotChart+HeatMap";
+			sourceTree = "<group>";
+		};
 		E26AA0A7208F023800E91C45 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +155,8 @@
 				E2858DC120A5C05100F6D6EA /* RightTableViewCell.swift */,
 				E2858DC220A5C05100F6D6EA /* RightTableViewCell.xib */,
 				E2858DC320A5C05100F6D6EA /* UITableView+Extension.swift */,
+				E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */,
+				E21D7AA620A9684A00BBF8C8 /* RightTableHeaderView.xib */,
 			);
 			path = TwoWayTableView;
 			sourceTree = "<group>";
@@ -177,6 +190,7 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */,
 				E2858DB820A5C05100F6D6EA /* TwoWayTableView */,
 				E28B7A1520A0502A005E4871 /* WithoutTable */,
 				E26AA0A7208F023800E91C45 /* Protocols */,
@@ -267,6 +281,7 @@
 				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
 				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
 				E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */,
+				E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */,
 				E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */,
 				E2E161332087588E00F5B9CE /* LaunchScreen.storyboard in Resources */,
 				E2E161302087588E00F5B9CE /* Assets.xcassets in Resources */,
@@ -357,6 +372,7 @@
 				E2E161262087588E00F5B9CE /* AppDelegate.swift in Sources */,
 				E26AA0AE208F02BF00E91C45 /* Extensions.swift in Sources */,
 				E2851542208DCC4D008ADF34 /* WithoutCollectionViewController.swift in Sources */,
+				E21D7AA520A9672300BBF8C8 /* RightTableHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
