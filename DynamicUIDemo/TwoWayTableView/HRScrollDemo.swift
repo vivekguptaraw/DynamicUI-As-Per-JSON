@@ -37,7 +37,7 @@ class HRScrollDemo: UIViewController {
          self.hrScrollTableView.rightTableWidth  = rightCellWidth
         self.hrScrollTableView.scrollView.alwaysBounceHorizontal = true
         DispatchQueue.main.asyncAfter(wallDeadline: .now() + 0.3) {
-            self.hrScrollTableView.applyRightShadowToLeftTable(view: self.hrScrollTableView.leftTable)
+            self.hrScrollTableView.applyRightShadowToLeftTable()
         }
     }
 
@@ -97,10 +97,10 @@ extension HRScrollDemo : HRScrollDelegate{
     func tableView(_ tableView: UITableView, headerAtSection: Int) -> UIView {
        
         if tableView.isEqual(self.hrScrollTableView.leftTable){
-            let lblLeft = UILabel(frame: CGRect(x: 0, y: 0, width: self.hrScrollTableView.leftTable.frame.width, height: 50))
+            let lblLeft = UILabel(frame: CGRect(x: 0, y: 0, width: self.hrScrollTableView.leftTable.frame.width - 2, height: 50))
             lblLeft.textAlignment = .center
-            lblLeft.text = "Title"
-            lblLeft.backgroundColor = UIColor.green
+            lblLeft.text = "Left title"
+            lblLeft.backgroundColor = UIColor.lightGray
             return lblLeft
         }else{
             let vw = UIView(frame: CGRect(x: 0, y: 0, width: self.hrScrollTableView.rightTable.frame.width, height: 50))
@@ -135,26 +135,3 @@ extension HRScrollDemo : HRScrollDelegate{
     }
     
 }
-//
-//extension HRScrollDemo: UICollectionViewDelegate, UICollectionViewDataSource{
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return rightTableArray[collectionView.tag].count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as RightCollectionViewCell
-//        cell.labelText.text = "\(rightTableArray[collectionView.tag][indexPath.row])"
-//        return cell
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        print("\(collectionView.tag) \(indexPath)")
-//
-//    }
-//
-//}
-

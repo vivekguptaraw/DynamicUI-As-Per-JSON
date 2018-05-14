@@ -212,7 +212,7 @@ class HRScrollTableView: UIView, UITableViewDelegate, UITableViewDataSource, NSF
         self.leftTable.endUpdates()
     }
     
-    func applyRightShadowToLeftTable(view: UITableView){
+    func applyRightShadowToLeftTable(){
         let contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         let shadowPathOnlyRight = UIEdgeInsetsInsetRect(CGRect(x: 1, y: shadowView.frame.origin.y, width: 5, height: shadowView.frame.height), contentInset)
         let path = UIBezierPath.init(rect: shadowPathOnlyRight)
