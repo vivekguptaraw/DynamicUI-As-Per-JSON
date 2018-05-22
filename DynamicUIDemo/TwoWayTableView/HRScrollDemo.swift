@@ -59,7 +59,7 @@ class HRScrollDemo: UIViewController {
         //MARK: 54 is taken as navigation bar height. You can pass height, width as per your requirement that which you size of control you want
         hrScrollTableView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 54)
     }
-
+	
 }
 
 extension HRScrollDemo : HRScrollDelegate{

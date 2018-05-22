@@ -46,13 +46,13 @@ class RightTableHeaderView: UIView {
     
     func applyBottomShadowToSelfView(){
         let contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
-        let shadowPathOnlyRight = UIEdgeInsetsInsetRect(CGRect(x: 0, y: 0, width: shadowView.frame.width, height: 2), contentInset)
+        let shadowPathOnlyRight = UIEdgeInsetsInsetRect(CGRect(x: 0, y: 0, width: shadowView.frame.width, height: 1), contentInset)
         let path = UIBezierPath.init(rect: shadowPathOnlyRight)
         shadowView.layer.shadowPath = path.cgPath
         shadowView.layer.shadowColor = UIColor.black.cgColor
         shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
         shadowView.layer.shadowOpacity = 0.3
-        shadowView.layer.shadowRadius = 3.0
+        shadowView.layer.shadowRadius = 1.0
         shadowView.layer.masksToBounds = false
     }
 }

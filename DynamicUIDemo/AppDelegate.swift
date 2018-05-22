@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Mark: Using ViewController
         //self.window?.rootViewController = UINavigationController(rootViewController: WithoutTableViewController())
         //Mark: Bidirectional TableViews Demo
-        self.window?.rootViewController = UINavigationController(rootViewController: HRScrollDemo())
+        self.window?.rootViewController = UINavigationController(rootViewController: ShotChartViewController()) //HRScrollDemo())
         self.window?.makeKeyAndVisible()
         return true
     }

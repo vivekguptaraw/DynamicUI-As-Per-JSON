@@ -18,6 +18,7 @@
 		E26806332091D79F00F201CA /* TableViewCustomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26806322091D79F00F201CA /* TableViewCustomController.swift */; };
 		E26806352091DD3B00F201CA /* jsonObjectsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26806342091DD3B00F201CA /* jsonObjectsClass.swift */; };
 		E26806372091F7F700F201CA /* CustomGeneratedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26806362091F7F700F201CA /* CustomGeneratedView.swift */; };
+		E269685920AAC932000CE04E /* PlayByPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E269685820AAC932000CE04E /* PlayByPlay.swift */; };
 		E26AA0AE208F02BF00E91C45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0A8208F02BE00E91C45 /* Extensions.swift */; };
 		E26AA0AF208F02BF00E91C45 /* Frameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0A9208F02BE00E91C45 /* Frameable.swift */; };
 		E26AA0B0208F02BF00E91C45 /* Groupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0AA208F02BE00E91C45 /* Groupable.swift */; };
@@ -25,6 +26,14 @@
 		E26AA0B2208F02BF00E91C45 /* Anchorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0AC208F02BF00E91C45 /* Anchorable.swift */; };
 		E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0AD208F02BF00E91C45 /* Alignable.swift */; };
 		E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0B4208F1A4E00E91C45 /* DynamicViewController.swift */; };
+		E27726CE20B28A9500566D32 /* HeatMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27726CC20B28A9400566D32 /* HeatMapView.m */; };
+		E27726D420B28B5000566D32 /* ShotTrackerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D020B28B4E00566D32 /* ShotTrackerHeaderView.swift */; };
+		E27726D620B28B5000566D32 /* ShotTrackerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27726D220B28B5000566D32 /* ShotTrackerHeaderView.xib */; };
+		E27726D820B296F500566D32 /* ShotChartControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D720B296F500566D32 /* ShotChartControlView.swift */; };
+		E27726DA20B2AABA00566D32 /* ShotChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D920B2AABA00566D32 /* ShotChartViewController.swift */; };
+		E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27726DB20B2B06000566D32 /* QuarterViewCell.xib */; };
+		E27726DE20B2B06100566D32 /* QuarterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726DC20B2B06000566D32 /* QuarterViewCell.swift */; };
+		E27726E220B2FDD200566D32 /* ShotChartCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726E120B2FDD200566D32 /* ShotChartCustomView.swift */; };
 		E2851542208DCC4D008ADF34 /* WithoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2851541208DCC4D008ADF34 /* WithoutCollectionViewController.swift */; };
 		E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DB920A5C05100F6D6EA /* BiDirectionalViewController.swift */; };
 		E2858DC520A5C05200F6D6EA /* horizontalFLowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2858DBA20A5C05100F6D6EA /* horizontalFLowLayout.swift */; };
@@ -60,6 +69,7 @@
 		E26806322091D79F00F201CA /* TableViewCustomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCustomController.swift; sourceTree = "<group>"; };
 		E26806342091DD3B00F201CA /* jsonObjectsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonObjectsClass.swift; sourceTree = "<group>"; };
 		E26806362091F7F700F201CA /* CustomGeneratedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGeneratedView.swift; sourceTree = "<group>"; };
+		E269685820AAC932000CE04E /* PlayByPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayByPlay.swift; sourceTree = "<group>"; };
 		E26AA0A8208F02BE00E91C45 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E26AA0A9208F02BE00E91C45 /* Frameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frameable.swift; sourceTree = "<group>"; };
 		E26AA0AA208F02BE00E91C45 /* Groupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Groupable.swift; sourceTree = "<group>"; };
@@ -67,6 +77,16 @@
 		E26AA0AC208F02BF00E91C45 /* Anchorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchorable.swift; sourceTree = "<group>"; };
 		E26AA0AD208F02BF00E91C45 /* Alignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alignable.swift; sourceTree = "<group>"; };
 		E26AA0B4208F1A4E00E91C45 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
+		E27726CB20B28A9100566D32 /* DynamicUIDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicUIDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E27726CC20B28A9400566D32 /* HeatMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMapView.m; sourceTree = "<group>"; };
+		E27726CD20B28A9400566D32 /* HeatMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapView.h; sourceTree = "<group>"; };
+		E27726D020B28B4E00566D32 /* ShotTrackerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotTrackerHeaderView.swift; sourceTree = "<group>"; };
+		E27726D220B28B5000566D32 /* ShotTrackerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotTrackerHeaderView.xib; sourceTree = "<group>"; };
+		E27726D720B296F500566D32 /* ShotChartControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotChartControlView.swift; sourceTree = "<group>"; };
+		E27726D920B2AABA00566D32 /* ShotChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotChartViewController.swift; sourceTree = "<group>"; };
+		E27726DB20B2B06000566D32 /* QuarterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuarterViewCell.xib; sourceTree = "<group>"; };
+		E27726DC20B2B06000566D32 /* QuarterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuarterViewCell.swift; sourceTree = "<group>"; };
+		E27726E120B2FDD200566D32 /* ShotChartCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotChartCustomView.swift; sourceTree = "<group>"; };
 		E2851541208DCC4D008ADF34 /* WithoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutCollectionViewController.swift; sourceTree = "<group>"; };
 		E2858DB920A5C05100F6D6EA /* BiDirectionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiDirectionalViewController.swift; sourceTree = "<group>"; };
 		E2858DBA20A5C05100F6D6EA /* horizontalFLowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = horizontalFLowLayout.swift; sourceTree = "<group>"; };
@@ -124,6 +144,17 @@
 		E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */ = {
 			isa = PBXGroup;
 			children = (
+				E269685820AAC932000CE04E /* PlayByPlay.swift */,
+				E27726D020B28B4E00566D32 /* ShotTrackerHeaderView.swift */,
+				E27726D220B28B5000566D32 /* ShotTrackerHeaderView.xib */,
+				E27726CD20B28A9400566D32 /* HeatMapView.h */,
+				E27726CC20B28A9400566D32 /* HeatMapView.m */,
+				E27726CB20B28A9100566D32 /* DynamicUIDemo-Bridging-Header.h */,
+				E27726DC20B2B06000566D32 /* QuarterViewCell.swift */,
+				E27726DB20B2B06000566D32 /* QuarterViewCell.xib */,
+				E27726D720B296F500566D32 /* ShotChartControlView.swift */,
+				E27726D920B2AABA00566D32 /* ShotChartViewController.swift */,
+				E27726E120B2FDD200566D32 /* ShotChartCustomView.swift */,
 			);
 			path = "ShotChart+HeatMap";
 			sourceTree = "<group>";
@@ -251,6 +282,7 @@
 				TargetAttributes = {
 					E2E161212087588E00F5B9CE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -278,8 +310,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27726D620B28B5000566D32 /* ShotTrackerHeaderView.xib in Resources */,
 				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
 				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
+				E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */,
 				E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */,
 				E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */,
 				E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */,
@@ -347,6 +381,7 @@
 				E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */,
 				E26AA0B0208F02BF00E91C45 /* Groupable.swift in Sources */,
 				E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */,
+				E27726CE20B28A9500566D32 /* HeatMapView.m in Sources */,
 				E26AA0B1208F02BF00E91C45 /* Enums.swift in Sources */,
 				E262C19F20887E1700FBABC7 /* ScreenViewController.swift in Sources */,
 				E28B7A1720A05055005E4871 /* WithoutTableViewController.swift in Sources */,
@@ -355,10 +390,12 @@
 				E26806352091DD3B00F201CA /* jsonObjectsClass.swift in Sources */,
 				E2A2C6A1209AD75B00FDE5DA /* SliderViewController.swift in Sources */,
 				E2E1612E2087588E00F5B9CE /* DynamicUIDemo.xcdatamodeld in Sources */,
+				E269685920AAC932000CE04E /* PlayByPlay.swift in Sources */,
 				E2858DC820A5C05200F6D6EA /* LeftTableViewCell.swift in Sources */,
 				E262C1A1208894C900FBABC7 /* DynamicCollectionViewCell.swift in Sources */,
 				E26AA0AF208F02BF00E91C45 /* Frameable.swift in Sources */,
 				E26663DA2089B0860045437F /* DataManager.swift in Sources */,
+				E27726D420B28B5000566D32 /* ShotTrackerHeaderView.swift in Sources */,
 				E262C1A32088966100FBABC7 /* ControlCreateModel.swift in Sources */,
 				E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */,
 				E2E161282087588E00F5B9CE /* ViewController.swift in Sources */,
@@ -373,6 +410,10 @@
 				E26AA0AE208F02BF00E91C45 /* Extensions.swift in Sources */,
 				E2851542208DCC4D008ADF34 /* WithoutCollectionViewController.swift in Sources */,
 				E21D7AA520A9672300BBF8C8 /* RightTableHeaderView.swift in Sources */,
+				E27726DE20B2B06100566D32 /* QuarterViewCell.swift in Sources */,
+				E27726D820B296F500566D32 /* ShotChartControlView.swift in Sources */,
+				E27726DA20B2AABA00566D32 /* ShotChartViewController.swift in Sources */,
+				E27726E220B2FDD200566D32 /* ShotChartCustomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,11 +551,14 @@
 			baseConfigurationReference = DCF3A09F84ADB03B6C40ED18 /* Pods-DynamicUIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DynamicUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vivek.DynamicUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicUIDemo/ShotChart+HeatMap/DynamicUIDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -525,11 +569,13 @@
 			baseConfigurationReference = B90C3D56F104C7E51E5C2BC8 /* Pods-DynamicUIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DynamicUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vivek.DynamicUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DynamicUIDemo/ShotChart+HeatMap/DynamicUIDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
