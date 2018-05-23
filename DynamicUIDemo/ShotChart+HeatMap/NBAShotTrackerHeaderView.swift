@@ -47,7 +47,7 @@ class ShotChartData {
     }
 }
 
-class ShotTrackerHeaderView: UIView {
+class NBAShotTrackerHeaderView: UIView {
     @IBOutlet weak var courtImage: UIImageView!
     @IBOutlet weak var shotChtImage: UIImageView!
     @IBOutlet weak var segmentController: UISegmentedControl!
@@ -171,7 +171,7 @@ class ShotTrackerHeaderView: UIView {
         self.segmentController.setTitleTextAttributes(attributesSel, for: UIControlState.selected)
         self.segmentController.setTitle("i", forSegmentAt: 1)
         self.segmentController.setTitle("I", forSegmentAt: 0)
-        self.segmentController.addTarget(self, action: #selector(ShotTrackerHeaderView.segmentControllerChange), for: UIControlEvents.valueChanged)
+        self.segmentController.addTarget(self, action: #selector(NBAShotTrackerHeaderView.segmentControllerChange), for: UIControlEvents.valueChanged)
         self.segmentController.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2.0))
         self.heatMapImage.isHidden = true
         
@@ -257,7 +257,7 @@ class ShotTrackerHeaderView: UIView {
     }
 }
 
-extension ShotTrackerHeaderView: ShotChartDrawDelegate {
+extension NBAShotTrackerHeaderView: ShotChartDrawDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dragging = false
         if !handle(touches, with: event, controlEvents: ControlEvents.touchBegan) {

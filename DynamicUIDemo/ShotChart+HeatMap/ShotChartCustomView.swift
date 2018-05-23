@@ -15,13 +15,13 @@ enum TeamSelected: String {
 }
 
 protocol ShotChartCustomViewProtocol {
-    
+    func quarterSelected<T>(quarter: T)
 }
 
 class ShotChartCustomView: UIView {
     
-    lazy var shotTrackerView: ShotTrackerHeaderView = {
-        let shotChart: ShotTrackerHeaderView = Bundle.main.loadNibNamed("ShotTrackerHeaderView", owner: self, options: nil)?.first as! ShotTrackerHeaderView
+    lazy var shotTrackerView: NBAShotTrackerHeaderView = {
+        let shotChart: NBAShotTrackerHeaderView = Bundle.main.loadNibNamed("NBAShotTrackerHeaderView", owner: self, options: nil)?.first as! NBAShotTrackerHeaderView
         shotChart.numberOfQtrSelected = self.selectedQuaters.count
         shotChart.collectionView.register(QuarterViewCell.self)
         shotChart.collectionView.delegate    = self

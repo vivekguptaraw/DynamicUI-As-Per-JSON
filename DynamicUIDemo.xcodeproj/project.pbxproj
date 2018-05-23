@@ -27,8 +27,8 @@
 		E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0AD208F02BF00E91C45 /* Alignable.swift */; };
 		E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AA0B4208F1A4E00E91C45 /* DynamicViewController.swift */; };
 		E27726CE20B28A9500566D32 /* HeatMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27726CC20B28A9400566D32 /* HeatMapView.m */; };
-		E27726D420B28B5000566D32 /* ShotTrackerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D020B28B4E00566D32 /* ShotTrackerHeaderView.swift */; };
-		E27726D620B28B5000566D32 /* ShotTrackerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27726D220B28B5000566D32 /* ShotTrackerHeaderView.xib */; };
+		E27726D420B28B5000566D32 /* NBAShotTrackerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D020B28B4E00566D32 /* NBAShotTrackerHeaderView.swift */; };
+		E27726D620B28B5000566D32 /* NBAShotTrackerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27726D220B28B5000566D32 /* NBAShotTrackerHeaderView.xib */; };
 		E27726D820B296F500566D32 /* ShotChartControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D720B296F500566D32 /* ShotChartControlView.swift */; };
 		E27726DA20B2AABA00566D32 /* ShotChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27726D920B2AABA00566D32 /* ShotChartViewController.swift */; };
 		E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27726DB20B2B06000566D32 /* QuarterViewCell.xib */; };
@@ -80,8 +80,8 @@
 		E27726CB20B28A9100566D32 /* DynamicUIDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicUIDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		E27726CC20B28A9400566D32 /* HeatMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMapView.m; sourceTree = "<group>"; };
 		E27726CD20B28A9400566D32 /* HeatMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapView.h; sourceTree = "<group>"; };
-		E27726D020B28B4E00566D32 /* ShotTrackerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotTrackerHeaderView.swift; sourceTree = "<group>"; };
-		E27726D220B28B5000566D32 /* ShotTrackerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotTrackerHeaderView.xib; sourceTree = "<group>"; };
+		E27726D020B28B4E00566D32 /* NBAShotTrackerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBAShotTrackerHeaderView.swift; sourceTree = "<group>"; };
+		E27726D220B28B5000566D32 /* NBAShotTrackerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NBAShotTrackerHeaderView.xib; sourceTree = "<group>"; };
 		E27726D720B296F500566D32 /* ShotChartControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotChartControlView.swift; sourceTree = "<group>"; };
 		E27726D920B2AABA00566D32 /* ShotChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotChartViewController.swift; sourceTree = "<group>"; };
 		E27726DB20B2B06000566D32 /* QuarterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuarterViewCell.xib; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				E269685820AAC932000CE04E /* PlayByPlay.swift */,
-				E27726D020B28B4E00566D32 /* ShotTrackerHeaderView.swift */,
-				E27726D220B28B5000566D32 /* ShotTrackerHeaderView.xib */,
+				E27726D020B28B4E00566D32 /* NBAShotTrackerHeaderView.swift */,
+				E27726D220B28B5000566D32 /* NBAShotTrackerHeaderView.xib */,
 				E27726CD20B28A9400566D32 /* HeatMapView.h */,
 				E27726CC20B28A9400566D32 /* HeatMapView.m */,
 				E27726CB20B28A9100566D32 /* DynamicUIDemo-Bridging-Header.h */,
@@ -310,7 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27726D620B28B5000566D32 /* ShotTrackerHeaderView.xib in Resources */,
+				E27726D620B28B5000566D32 /* NBAShotTrackerHeaderView.xib in Resources */,
 				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
 				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
 				E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */,
@@ -395,7 +395,7 @@
 				E262C1A1208894C900FBABC7 /* DynamicCollectionViewCell.swift in Sources */,
 				E26AA0AF208F02BF00E91C45 /* Frameable.swift in Sources */,
 				E26663DA2089B0860045437F /* DataManager.swift in Sources */,
-				E27726D420B28B5000566D32 /* ShotTrackerHeaderView.swift in Sources */,
+				E27726D420B28B5000566D32 /* NBAShotTrackerHeaderView.swift in Sources */,
 				E262C1A32088966100FBABC7 /* ControlCreateModel.swift in Sources */,
 				E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */,
 				E2E161282087588E00F5B9CE /* ViewController.swift in Sources */,
