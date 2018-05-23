@@ -21,7 +21,7 @@ class ShotChartViewController: UIViewController {
         self.view.addSubview(cust)
         cust.frame = CGRect(origin: CGPoint(x: 0, y: 100), size: CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.5475578406 + 103 + (yMarginForShotTrakerView + heightForQuartersView)))
         cust.setPlayByPlay(visitor: jsonPlayByPlay1, home: jsonPlayByPlay2)
-        cust.period = 4
+        cust.period = 8
         cust.teamNamesArray = ["Team 1", "Team 2"]
         cust.teamSelected = .Opponent
         self.title = "Shot Chart Component"

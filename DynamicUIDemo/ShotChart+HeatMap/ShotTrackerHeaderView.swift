@@ -164,7 +164,7 @@ class ShotTrackerHeaderView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.darkGray
+        self.backgroundColor = UIColor.hexStringToUIColor(hex: "e2e2e2")
         let attributes = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15), NSAttributedStringKey.foregroundColor: UIColor.darkGray]
         let attributesSel = [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 15), NSAttributedStringKey.foregroundColor: UIColor.white]
         self.segmentController.setTitleTextAttributes(attributes, for: UIControlState.normal)

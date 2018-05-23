@@ -37,8 +37,8 @@ class ShotChartCustomView: UIView {
             
         }
     }
-    var homeTeamColor: UIColor = UIColor.blue
-    var visitorTeamColor: UIColor = UIColor.green
+    var homeTeamColor: UIColor = UIColor.hexStringToUIColor(hex: "314989")
+    var visitorTeamColor: UIColor = UIColor.hexStringToUIColor(hex: "4db7bc")
     var period: Int = 4{
         didSet{
             selectedQuaters.removeAll()
@@ -137,6 +137,7 @@ class ShotChartCustomView: UIView {
         self.createQuarterCollectionView()
         self.segmentController.frame = CGRect(x: 30, y: 0, width: self.frame.width - 60, height: 40)
         self.shotTrackerView.frame = CGRect(x: 0, y: self.segmentController.frame.maxY + yMarginForShotTrakerView, width: self.frame.width, height: UIScreen.main.bounds.width / 1.5475578406 + 103)
+        self.backgroundColor = UIColor.hexStringToUIColor(hex: "DCDCDC")
     }
 
 }
@@ -155,9 +156,11 @@ extension ShotChartCustomView: UICollectionViewDelegate, UICollectionViewDataSou
         if self.selectedQuaters.contains(indexPath.row + 1) {
             cell.backgroundColor   = keyColor
             cell.quarterLabel.font = UIFont.systemFont(ofSize: 16)
+            cell.quarterLabel.textColor = UIColor.white
         }else {
             cell.backgroundColor   = UIColor.white
             cell.quarterLabel.font = UIFont.systemFont(ofSize: 16)
+            cell.quarterLabel.textColor = keyColor
         }
         
         cell.quarterLabel.text                  = indexPath.row.getPeriodNameForPeriod()
