@@ -33,6 +33,11 @@ protocol ShotChartDrawDelegate: class {
     func addTargetInRec(pointRect: CGRect, playByPlay: PlayByPlay)
 }
 
+protocol ShotChartCliksDelegate: class {
+    func pointsClickedHandler<T, U>(data: T, anotherData: U)
+}
+
+
 class ShotChartData {
     var target: AnyObject
     var action: ((_ rect: CGRect) -> Swift.Void)
@@ -74,7 +79,7 @@ class NBAShotTrackerHeaderView: UIView {
     var dragging: Bool      = false
     var gCode: String    = ""
     var teamID: String    = ""
-    
+    weak var delegate: ShotChartCliksDelegate?
     var numberOfQtrSelected: Int = 1 {
         didSet {
             if self.heatMapImage.isHidden {
@@ -294,7 +299,7 @@ extension NBAShotTrackerHeaderView: ShotChartDrawDelegate {
                     circleString = String.fontAwesomeIcon(name: .circleO)
                 }
             }
-            
+            slf.delegate?.pointsClickedHandler(data: playByPlay, anotherData: circleString)
             slf.showSelectedPlayByPlay(playByPlay: playByPlay, circleString: circleString, rect: newPointRect)
         }
         self.touchUpEventHandlers.append(shotData)

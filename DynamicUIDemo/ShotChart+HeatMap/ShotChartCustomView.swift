@@ -14,12 +14,13 @@ enum TeamSelected: String {
     case Opponent = "opponent"
 }
 
-protocol ShotChartCustomViewProtocol {
-    func quarterSelected<T>(quarter: T)
+ protocol ShotChartMainViewProtocol: class {
+    
+     func quarterSelected<T>(quarter: T)
 }
 
 class ShotChartCustomView: UIView {
-    
+    weak var delegate: ShotChartMainViewProtocol?
     lazy var shotTrackerView: NBAShotTrackerHeaderView = {
         let shotChart: NBAShotTrackerHeaderView = Bundle.main.loadNibNamed("NBAShotTrackerHeaderView", owner: self, options: nil)?.first as! NBAShotTrackerHeaderView
         shotChart.numberOfQtrSelected = self.selectedQuaters.count
@@ -192,10 +193,19 @@ extension ShotChartCustomView: UICollectionViewDelegate, UICollectionViewDataSou
             self.shotTrackerView.numberOfQtrSelected = self.selectedQuaters.count
             self.fetchPlayByPlay()
         }
-        
-        var team = "kings"
-        //        if self.teamID != ConfigViewModel.shared.homeTeamID {
-        //            team = "other"
-        //        }
+        self.delegate?.quarterSelected(quarter: self.selectedQuaters)
     }
 }
+
+
+extension Int {
+    func getPeriodNameForPeriod () -> String{
+        switch (self) {
+        case 0...3:
+            return "Q\(self + 1)"
+        default:
+            return "OT\(self - 3)"
+        }
+    }
+}
+

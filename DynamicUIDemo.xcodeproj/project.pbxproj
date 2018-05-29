@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8001C03A20BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8001C03920BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png */; };
+		8001C03F20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png in Resources */ = {isa = PBXBuildFile; fileRef = 8001C03B20BC125C00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png */; };
+		8001C04020BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png in Resources */ = {isa = PBXBuildFile; fileRef = 8001C03C20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png */; };
+		8001C04120BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png in Resources */ = {isa = PBXBuildFile; fileRef = 8001C03D20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png */; };
+		8001C04220BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 8001C03E20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png */; };
+		8001C04420BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png in Resources */ = {isa = PBXBuildFile; fileRef = 8001C04320BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png */; };
+		8001C04620BC131600BE7CA6 /* NBAScheduleExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001C04520BC131600BE7CA6 /* NBAScheduleExpandableView.swift */; };
+		801280A020B6DDB800776F65 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012809F20B6DDB800776F65 /* CalenderCell.swift */; };
+		801F566220B6CDBD00C532BB /* NBAScheduleCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F566120B6CDBD00C532BB /* NBAScheduleCalenderView.swift */; };
+		8037507820BD30F100503E9A /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507720BD30F100503E9A /* GameDetailModel.swift */; };
+		8037507A20BD38CA00503E9A /* ScheduleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507920BD38CA00503E9A /* ScheduleDemoViewController.swift */; };
+		8037507C20BD405500503E9A /* NBACalenderWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507B20BD405500503E9A /* NBACalenderWeekCell.swift */; };
+		8037507E20BD40A300503E9A /* BubbleArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507D20BD40A300503E9A /* BubbleArrowView.swift */; };
+		8037508020BD787400503E9A /* NBACalenderDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507F20BD787400503E9A /* NBACalenderDateCell.swift */; };
+		803A9E1E20B7D97600D98091 /* NBADateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1D20B7D97600D98091 /* NBADateModel.swift */; };
+		803A9E2020B7DEE900D98091 /* NBACalenderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */; };
+		803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */; };
 		C0E062FDE6DADE97AB669C21 /* Pods_DynamicUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1FEA4D53DE5BBA2F62C5F2 /* Pods_DynamicUIDemo.framework */; };
 		E21D7AA520A9672300BBF8C8 /* RightTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */; };
 		E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21D7AA620A9684A00BBF8C8 /* RightTableHeaderView.xib */; };
@@ -57,6 +74,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8001C03920BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png"; sourceTree = "<group>"; };
+		8001C03B20BC125C00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png"; sourceTree = "<group>"; };
+		8001C03C20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png"; sourceTree = "<group>"; };
+		8001C03D20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png"; sourceTree = "<group>"; };
+		8001C03E20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png"; sourceTree = "<group>"; };
+		8001C04320BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png"; sourceTree = "<group>"; };
+		8001C04520BC131600BE7CA6 /* NBAScheduleExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAScheduleExpandableView.swift; sourceTree = "<group>"; };
+		8012809F20B6DDB800776F65 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		801F566120B6CDBD00C532BB /* NBAScheduleCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAScheduleCalenderView.swift; sourceTree = "<group>"; };
+		8037507720BD30F100503E9A /* GameDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
+		8037507920BD38CA00503E9A /* ScheduleDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDemoViewController.swift; sourceTree = "<group>"; };
+		8037507B20BD405500503E9A /* NBACalenderWeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderWeekCell.swift; sourceTree = "<group>"; };
+		8037507D20BD40A300503E9A /* BubbleArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleArrowView.swift; sourceTree = "<group>"; };
+		8037507F20BD787400503E9A /* NBACalenderDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderDateCell.swift; sourceTree = "<group>"; };
+		803A9E1D20B7D97600D98091 /* NBADateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBADateModel.swift; sourceTree = "<group>"; };
+		803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderViewLayout.swift; sourceTree = "<group>"; };
+		803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderDemoViewController.swift; sourceTree = "<group>"; };
 		B90C3D56F104C7E51E5C2BC8 /* Pods-DynamicUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DCF3A09F84ADB03B6C40ED18 /* Pods-DynamicUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTableHeaderView.swift; sourceTree = "<group>"; };
@@ -141,6 +175,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8001C03820BC108E00BE7CA6 /* Kings Like Schedule Calender */ = {
+			isa = PBXGroup;
+			children = (
+				8001C04520BC131600BE7CA6 /* NBAScheduleExpandableView.swift */,
+				8037507720BD30F100503E9A /* GameDetailModel.swift */,
+				8037507920BD38CA00503E9A /* ScheduleDemoViewController.swift */,
+				8037507B20BD405500503E9A /* NBACalenderWeekCell.swift */,
+				8037507D20BD40A300503E9A /* BubbleArrowView.swift */,
+				8037507F20BD787400503E9A /* NBACalenderDateCell.swift */,
+			);
+			path = "Kings Like Schedule Calender";
+			sourceTree = "<group>";
+		};
+		801F565D20B6CD0C00C532BB /* Schedule Calendar UI */ = {
+			isa = PBXGroup;
+			children = (
+				801F566120B6CDBD00C532BB /* NBAScheduleCalenderView.swift */,
+				8012809F20B6DDB800776F65 /* CalenderCell.swift */,
+				803A9E1D20B7D97600D98091 /* NBADateModel.swift */,
+				803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */,
+				803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */,
+				8001C03920BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png */,
+			);
+			path = "Schedule Calendar UI";
+			sourceTree = "<group>";
+		};
 		E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +215,10 @@
 				E27726D720B296F500566D32 /* ShotChartControlView.swift */,
 				E27726D920B2AABA00566D32 /* ShotChartViewController.swift */,
 				E27726E120B2FDD200566D32 /* ShotChartCustomView.swift */,
+				8001C03E20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png */,
+				8001C03B20BC125C00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png */,
+				8001C03D20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png */,
+				8001C03C20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png */,
 			);
 			path = "ShotChart+HeatMap";
 			sourceTree = "<group>";
@@ -175,6 +239,7 @@
 		E2858DB820A5C05100F6D6EA /* TwoWayTableView */ = {
 			isa = PBXGroup;
 			children = (
+				8001C04320BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png */,
 				E2858DB920A5C05100F6D6EA /* BiDirectionalViewController.swift */,
 				E2858DBA20A5C05100F6D6EA /* horizontalFLowLayout.swift */,
 				E2858DBB20A5C05100F6D6EA /* HRScrollDemo.swift */,
@@ -221,6 +286,8 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8001C03820BC108E00BE7CA6 /* Kings Like Schedule Calender */,
+				801F565D20B6CD0C00C532BB /* Schedule Calendar UI */,
 				E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */,
 				E2858DB820A5C05100F6D6EA /* TwoWayTableView */,
 				E28B7A1520A0502A005E4871 /* WithoutTable */,
@@ -259,7 +326,6 @@
 				E2E1611F2087588E00F5B9CE /* Frameworks */,
 				E2E161202087588E00F5B9CE /* Resources */,
 				99BE6CF61ACD077D5F9836B2 /* [CP] Embed Pods Frameworks */,
-				FE82093C086B4B1E34BF7CE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +349,7 @@
 					E2E161212087588E00F5B9CE = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -311,14 +377,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E27726D620B28B5000566D32 /* NBAShotTrackerHeaderView.xib in Resources */,
+				8001C04120BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png in Resources */,
 				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
 				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
+				8001C04420BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png in Resources */,
+				8001C03F20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png in Resources */,
+				8001C04020BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png in Resources */,
 				E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */,
 				E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */,
 				E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */,
 				E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */,
 				E2E161332087588E00F5B9CE /* LaunchScreen.storyboard in Resources */,
 				E2E161302087588E00F5B9CE /* Assets.xcassets in Resources */,
+				8001C04220BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png in Resources */,
+				8001C03A20BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png in Resources */,
 				E2E1612B2087588E00F5B9CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,9 +404,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,28 +422,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicUIDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FE82093C086B4B1E34BF7CE3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -378,16 +441,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8037507E20BD40A300503E9A /* BubbleArrowView.swift in Sources */,
+				8037507A20BD38CA00503E9A /* ScheduleDemoViewController.swift in Sources */,
 				E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */,
 				E26AA0B0208F02BF00E91C45 /* Groupable.swift in Sources */,
+				8037508020BD787400503E9A /* NBACalenderDateCell.swift in Sources */,
 				E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */,
 				E27726CE20B28A9500566D32 /* HeatMapView.m in Sources */,
 				E26AA0B1208F02BF00E91C45 /* Enums.swift in Sources */,
 				E262C19F20887E1700FBABC7 /* ScreenViewController.swift in Sources */,
 				E28B7A1720A05055005E4871 /* WithoutTableViewController.swift in Sources */,
 				E2858DC720A5C05200F6D6EA /* HRScrollTableView.swift in Sources */,
+				803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */,
 				E26AA0B2208F02BF00E91C45 /* Anchorable.swift in Sources */,
 				E26806352091DD3B00F201CA /* jsonObjectsClass.swift in Sources */,
+				803A9E1E20B7D97600D98091 /* NBADateModel.swift in Sources */,
 				E2A2C6A1209AD75B00FDE5DA /* SliderViewController.swift in Sources */,
 				E2E1612E2087588E00F5B9CE /* DynamicUIDemo.xcdatamodeld in Sources */,
 				E269685920AAC932000CE04E /* PlayByPlay.swift in Sources */,
@@ -399,21 +467,27 @@
 				E262C1A32088966100FBABC7 /* ControlCreateModel.swift in Sources */,
 				E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */,
 				E2E161282087588E00F5B9CE /* ViewController.swift in Sources */,
+				803A9E2020B7DEE900D98091 /* NBACalenderViewLayout.swift in Sources */,
 				E2858DC620A5C05200F6D6EA /* HRScrollDemo.swift in Sources */,
+				8037507C20BD405500503E9A /* NBACalenderWeekCell.swift in Sources */,
 				E26806372091F7F700F201CA /* CustomGeneratedView.swift in Sources */,
 				E2858DCC20A5C05200F6D6EA /* RightTableViewCell.swift in Sources */,
 				E2858DC520A5C05200F6D6EA /* horizontalFLowLayout.swift in Sources */,
 				E2858DCA20A5C05200F6D6EA /* RightCollectionViewCell.swift in Sources */,
 				E2858DCE20A5C05200F6D6EA /* UITableView+Extension.swift in Sources */,
+				801280A020B6DDB800776F65 /* CalenderCell.swift in Sources */,
 				E26806332091D79F00F201CA /* TableViewCustomController.swift in Sources */,
+				8037507820BD30F100503E9A /* GameDetailModel.swift in Sources */,
 				E2E161262087588E00F5B9CE /* AppDelegate.swift in Sources */,
 				E26AA0AE208F02BF00E91C45 /* Extensions.swift in Sources */,
 				E2851542208DCC4D008ADF34 /* WithoutCollectionViewController.swift in Sources */,
 				E21D7AA520A9672300BBF8C8 /* RightTableHeaderView.swift in Sources */,
 				E27726DE20B2B06100566D32 /* QuarterViewCell.swift in Sources */,
+				801F566220B6CDBD00C532BB /* NBAScheduleCalenderView.swift in Sources */,
 				E27726D820B296F500566D32 /* ShotChartControlView.swift in Sources */,
 				E27726DA20B2AABA00566D32 /* ShotChartViewController.swift in Sources */,
 				E27726E220B2FDD200566D32 /* ShotChartCustomView.swift in Sources */,
+				8001C04620BC131600BE7CA6 /* NBAScheduleExpandableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,11 +626,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
 				INFOPLIST_FILE = DynamicUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vivek.DynamicUIDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f91c5830-0e1c-440e-9122-46f3a1eebb10";
+				PROVISIONING_PROFILE_SPECIFIER = Sandbox_APNS;
 				SWIFT_OBJC_BRIDGING_HEADER = "DynamicUIDemo/ShotChart+HeatMap/DynamicUIDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -570,11 +647,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9GU36QFD53;
 				INFOPLIST_FILE = DynamicUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vivek.DynamicUIDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raweng.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f91c5830-0e1c-440e-9122-46f3a1eebb10";
+				PROVISIONING_PROFILE_SPECIFIER = Sandbox_APNS;
 				SWIFT_OBJC_BRIDGING_HEADER = "DynamicUIDemo/ShotChart+HeatMap/DynamicUIDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

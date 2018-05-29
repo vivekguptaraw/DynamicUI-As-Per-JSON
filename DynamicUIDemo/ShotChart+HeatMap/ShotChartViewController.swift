@@ -18,10 +18,12 @@ class ShotChartViewController: UIViewController {
         super.viewDidLoad()
         
         let cust = ShotChartCustomView()
+        cust.delegate = self
+        cust.shotTrackerView.delegate = self
         self.view.addSubview(cust)
         cust.frame = CGRect(origin: CGPoint(x: 0, y: 100), size: CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.5475578406 + 103 + (yMarginForShotTrakerView + heightForQuartersView)))
         cust.setPlayByPlay(visitor: jsonPlayByPlay1, home: jsonPlayByPlay2)
-        cust.period = 8
+        cust.period = 5
         cust.teamNamesArray = ["Team 1", "Team 2"]
         cust.teamSelected = .Opponent
         self.title = "Shot Chart Component"
@@ -38,14 +40,13 @@ class ShotChartViewController: UIViewController {
     }
 }
 
-
-extension Int {
-    func getPeriodNameForPeriod () -> String{
-        switch (self) {
-        case 0...3:
-            return "Q\(self + 1)"
-        default:
-            return "OT\(self - 3)"
-        }
+extension ShotChartViewController: ShotChartMainViewProtocol, ShotChartCliksDelegate{
+    func pointsClickedHandler<T, U>(data: T, anotherData: U) {
+        print(data)
+        print(anotherData)
+    }
+    
+    func quarterSelected<T>(quarter: T) {
+        print(quarter)
     }
 }
