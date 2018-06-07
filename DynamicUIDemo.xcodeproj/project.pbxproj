@@ -16,6 +16,10 @@
 		8001C04620BC131600BE7CA6 /* NBAScheduleExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001C04520BC131600BE7CA6 /* NBAScheduleExpandableView.swift */; };
 		801280A020B6DDB800776F65 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012809F20B6DDB800776F65 /* CalenderCell.swift */; };
 		801F566220B6CDBD00C532BB /* NBAScheduleCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F566120B6CDBD00C532BB /* NBAScheduleCalenderView.swift */; };
+		802F653320C9020D008C216E /* NCScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F653220C9020D008C216E /* NCScheduleListView.swift */; };
+		8031237920C7A71A005BBEC1 /* NBAGameDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031237820C7A71A005BBEC1 /* NBAGameDetailViewModel.swift */; };
+		8031237B20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031237A20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift */; };
+		8031237D20C80824005BBEC1 /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-06 at 17.46.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8031237C20C80824005BBEC1 /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-06 at 17.46.16.png */; };
 		8037507820BD30F100503E9A /* GameDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507720BD30F100503E9A /* GameDetailModel.swift */; };
 		8037507A20BD38CA00503E9A /* ScheduleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507920BD38CA00503E9A /* ScheduleDemoViewController.swift */; };
 		8037507C20BD405500503E9A /* NBACalenderWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507B20BD405500503E9A /* NBACalenderWeekCell.swift */; };
@@ -24,6 +28,12 @@
 		803A9E1E20B7D97600D98091 /* NBADateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1D20B7D97600D98091 /* NBADateModel.swift */; };
 		803A9E2020B7DEE900D98091 /* NBACalenderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */; };
 		803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */; };
+		8051D1F320C65F5300885A4F /* NBAGameScheduleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051D1F220C65F5300885A4F /* NBAGameScheduleHeaderView.swift */; };
+		8051D1F520C65F6600885A4F /* NBAGameScheduleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8051D1F420C65F6600885A4F /* NBAGameScheduleHeaderView.xib */; };
+		8051D1F820C670EF00885A4F /* NBAGameScheduleCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051D1F620C670EF00885A4F /* NBAGameScheduleCollCell.swift */; };
+		8051D1F920C670EF00885A4F /* NBAGameScheduleCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8051D1F720C670EF00885A4F /* NBAGameScheduleCollCell.xib */; };
+		8051D1FB20C6B26600885A4F /* NBACalenderWeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8051D1FA20C6B26600885A4F /* NBACalenderWeekCell.xib */; };
+		8051D1FD20C6BD2400885A4F /* NBACalenderDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8051D1FC20C6BD2400885A4F /* NBACalenderDateCell.xib */; };
 		C0E062FDE6DADE97AB669C21 /* Pods_DynamicUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1FEA4D53DE5BBA2F62C5F2 /* Pods_DynamicUIDemo.framework */; };
 		E21D7AA520A9672300BBF8C8 /* RightTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */; };
 		E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E21D7AA620A9684A00BBF8C8 /* RightTableHeaderView.xib */; };
@@ -83,6 +93,10 @@
 		8001C04520BC131600BE7CA6 /* NBAScheduleExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAScheduleExpandableView.swift; sourceTree = "<group>"; };
 		8012809F20B6DDB800776F65 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
 		801F566120B6CDBD00C532BB /* NBAScheduleCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAScheduleCalenderView.swift; sourceTree = "<group>"; };
+		802F653220C9020D008C216E /* NCScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCScheduleListView.swift; sourceTree = "<group>"; };
+		8031237820C7A71A005BBEC1 /* NBAGameDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAGameDetailViewModel.swift; sourceTree = "<group>"; };
+		8031237A20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCScrollableSegmentControl.swift; sourceTree = "<group>"; };
+		8031237C20C80824005BBEC1 /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-06 at 17.46.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-06-06 at 17.46.16.png"; sourceTree = "<group>"; };
 		8037507720BD30F100503E9A /* GameDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailModel.swift; sourceTree = "<group>"; };
 		8037507920BD38CA00503E9A /* ScheduleDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDemoViewController.swift; sourceTree = "<group>"; };
 		8037507B20BD405500503E9A /* NBACalenderWeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderWeekCell.swift; sourceTree = "<group>"; };
@@ -91,6 +105,12 @@
 		803A9E1D20B7D97600D98091 /* NBADateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBADateModel.swift; sourceTree = "<group>"; };
 		803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderViewLayout.swift; sourceTree = "<group>"; };
 		803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderDemoViewController.swift; sourceTree = "<group>"; };
+		8051D1F220C65F5300885A4F /* NBAGameScheduleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAGameScheduleHeaderView.swift; sourceTree = "<group>"; };
+		8051D1F420C65F6600885A4F /* NBAGameScheduleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBAGameScheduleHeaderView.xib; sourceTree = "<group>"; };
+		8051D1F620C670EF00885A4F /* NBAGameScheduleCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAGameScheduleCollCell.swift; sourceTree = "<group>"; };
+		8051D1F720C670EF00885A4F /* NBAGameScheduleCollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBAGameScheduleCollCell.xib; sourceTree = "<group>"; };
+		8051D1FA20C6B26600885A4F /* NBACalenderWeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBACalenderWeekCell.xib; sourceTree = "<group>"; };
+		8051D1FC20C6BD2400885A4F /* NBACalenderDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBACalenderDateCell.xib; sourceTree = "<group>"; };
 		B90C3D56F104C7E51E5C2BC8 /* Pods-DynamicUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUIDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DCF3A09F84ADB03B6C40ED18 /* Pods-DynamicUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicUIDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicUIDemo/Pods-DynamicUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E21D7AA420A9672300BBF8C8 /* RightTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTableHeaderView.swift; sourceTree = "<group>"; };
@@ -184,6 +204,15 @@
 				8037507B20BD405500503E9A /* NBACalenderWeekCell.swift */,
 				8037507D20BD40A300503E9A /* BubbleArrowView.swift */,
 				8037507F20BD787400503E9A /* NBACalenderDateCell.swift */,
+				8051D1F220C65F5300885A4F /* NBAGameScheduleHeaderView.swift */,
+				8051D1F420C65F6600885A4F /* NBAGameScheduleHeaderView.xib */,
+				8051D1F620C670EF00885A4F /* NBAGameScheduleCollCell.swift */,
+				8051D1F720C670EF00885A4F /* NBAGameScheduleCollCell.xib */,
+				8051D1FA20C6B26600885A4F /* NBACalenderWeekCell.xib */,
+				8051D1FC20C6BD2400885A4F /* NBACalenderDateCell.xib */,
+				8031237820C7A71A005BBEC1 /* NBAGameDetailViewModel.swift */,
+				8031237A20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift */,
+				8031237C20C80824005BBEC1 /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-06 at 17.46.16.png */,
 			);
 			path = "Kings Like Schedule Calender";
 			sourceTree = "<group>";
@@ -199,6 +228,14 @@
 				8001C03920BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png */,
 			);
 			path = "Schedule Calendar UI";
+			sourceTree = "<group>";
+		};
+		8031237E20C80909005BBEC1 /* Heat Like Schedule List UI */ = {
+			isa = PBXGroup;
+			children = (
+				802F653220C9020D008C216E /* NCScheduleListView.swift */,
+			);
+			path = "Heat Like Schedule List UI";
 			sourceTree = "<group>";
 		};
 		E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */ = {
@@ -286,6 +323,7 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8031237E20C80909005BBEC1 /* Heat Like Schedule List UI */,
 				8001C03820BC108E00BE7CA6 /* Kings Like Schedule Calender */,
 				801F565D20B6CD0C00C532BB /* Schedule Calendar UI */,
 				E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */,
@@ -342,6 +380,7 @@
 		E2E1611A2087588E00F5B9CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NC;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Vivek Gupta";
@@ -378,14 +417,19 @@
 			files = (
 				E27726D620B28B5000566D32 /* NBAShotTrackerHeaderView.xib in Resources */,
 				8001C04120BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.29.png in Resources */,
+				8051D1F920C670EF00885A4F /* NBAGameScheduleCollCell.xib in Resources */,
 				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
 				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
 				8001C04420BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png in Resources */,
+				8051D1FB20C6B26600885A4F /* NBACalenderWeekCell.xib in Resources */,
+				8051D1F520C65F6600885A4F /* NBAGameScheduleHeaderView.xib in Resources */,
 				8001C03F20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png in Resources */,
 				8001C04020BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png in Resources */,
 				E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */,
 				E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */,
+				8031237D20C80824005BBEC1 /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-06 at 17.46.16.png in Resources */,
 				E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */,
+				8051D1FD20C6BD2400885A4F /* NBACalenderDateCell.xib in Resources */,
 				E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */,
 				E2E161332087588E00F5B9CE /* LaunchScreen.storyboard in Resources */,
 				E2E161302087588E00F5B9CE /* Assets.xcassets in Resources */,
@@ -442,9 +486,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8037507E20BD40A300503E9A /* BubbleArrowView.swift in Sources */,
+				8031237920C7A71A005BBEC1 /* NBAGameDetailViewModel.swift in Sources */,
 				8037507A20BD38CA00503E9A /* ScheduleDemoViewController.swift in Sources */,
 				E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */,
 				E26AA0B0208F02BF00E91C45 /* Groupable.swift in Sources */,
+				8051D1F820C670EF00885A4F /* NBAGameScheduleCollCell.swift in Sources */,
 				8037508020BD787400503E9A /* NBACalenderDateCell.swift in Sources */,
 				E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */,
 				E27726CE20B28A9500566D32 /* HeatMapView.m in Sources */,
@@ -455,6 +501,7 @@
 				803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */,
 				E26AA0B2208F02BF00E91C45 /* Anchorable.swift in Sources */,
 				E26806352091DD3B00F201CA /* jsonObjectsClass.swift in Sources */,
+				802F653320C9020D008C216E /* NCScheduleListView.swift in Sources */,
 				803A9E1E20B7D97600D98091 /* NBADateModel.swift in Sources */,
 				E2A2C6A1209AD75B00FDE5DA /* SliderViewController.swift in Sources */,
 				E2E1612E2087588E00F5B9CE /* DynamicUIDemo.xcdatamodeld in Sources */,
@@ -463,6 +510,7 @@
 				E262C1A1208894C900FBABC7 /* DynamicCollectionViewCell.swift in Sources */,
 				E26AA0AF208F02BF00E91C45 /* Frameable.swift in Sources */,
 				E26663DA2089B0860045437F /* DataManager.swift in Sources */,
+				8051D1F320C65F5300885A4F /* NBAGameScheduleHeaderView.swift in Sources */,
 				E27726D420B28B5000566D32 /* NBAShotTrackerHeaderView.swift in Sources */,
 				E262C1A32088966100FBABC7 /* ControlCreateModel.swift in Sources */,
 				E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */,
@@ -478,6 +526,7 @@
 				801280A020B6DDB800776F65 /* CalenderCell.swift in Sources */,
 				E26806332091D79F00F201CA /* TableViewCustomController.swift in Sources */,
 				8037507820BD30F100503E9A /* GameDetailModel.swift in Sources */,
+				8031237B20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift in Sources */,
 				E2E161262087588E00F5B9CE /* AppDelegate.swift in Sources */,
 				E26AA0AE208F02BF00E91C45 /* Extensions.swift in Sources */,
 				E2851542208DCC4D008ADF34 /* WithoutCollectionViewController.swift in Sources */,

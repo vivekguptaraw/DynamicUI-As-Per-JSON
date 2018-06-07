@@ -46,10 +46,15 @@ struct GameDetailModel {
             mid = a
         }
         if let a = json["gdte"] as? String{
+            
             let dateFormatter = GameDetailModel.dateFormatter //2017-10-03 02:00:00 +0000
-        
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'T'Z"
-            self.gdte = dateFormatter.date(from: a)
+            //dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            if let dd = dateFormatter.date(from: a){
+                self.gdte = dd
+            }
+            
             if self.gdte == nil {
                 dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
                 self.gdte = dateFormatter.date(from: a)

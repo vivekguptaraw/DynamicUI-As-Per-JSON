@@ -13,8 +13,8 @@ class ScheduleDemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var frm = self.view.frame
-        frm.origin = CGPoint(x: 0, y: self.navigationController!.navigationBar.frame.height)
-        frm.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - self.navigationController!.navigationBar.frame.height)
+        frm.origin = CGPoint(x: 0, y: 0)
+        frm.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - self.navigationController!.navigationBar.frame.height - 20)
         let customView = NBAScheduleExpandableView(frame: frm)
         self.view.addSubview(customView)
         
