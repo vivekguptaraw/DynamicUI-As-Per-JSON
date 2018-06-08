@@ -29,7 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window?.rootViewController = UINavigationController(rootViewController: WithoutTableViewController())
         //Mark: Bidirectional TableViews Demo
         //self.window?.rootViewController = UINavigationController(rootViewController: NBACalenderDemoViewController()) //HRScrollDemo()) //
-        self.window?.rootViewController = UINavigationController(rootViewController: ScheduleDemoViewController()) 
+        //self.window?.rootViewController = UINavigationController(rootViewController: ScheduleDemoViewController())
+        self.window?.rootViewController = UINavigationController(rootViewController: NCScheduleListDemoViewController())
+        
         self.window?.makeKeyAndVisible()
         return true
     }

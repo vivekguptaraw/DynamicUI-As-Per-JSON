@@ -21,7 +21,9 @@ class NBACalenderWeekCell: UITableViewCell {
     
     @IBOutlet weak var selectedModelsCollectionView: UICollectionView!
     
+    @IBOutlet weak var weekCollectionHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var selectedModelsCollectionConstraint: NSLayoutConstraint!
     weak var delegate: NBACalendarDateCellDelegate?
     var selectedIndexPath: IndexPath?
     var indexPath: IndexPath?
@@ -40,6 +42,7 @@ class NBACalenderWeekCell: UITableViewCell {
     
     var cellModel: [Any] = [Any]() {
         didSet {
+            self.selectedModelsCollectionConstraint.constant = SCHEDULEHEIGHT
             self.selectedModelsCollectionView.delegate    = self
             self.selectedModelsCollectionView.dataSource  = self
             self.selectedModelsCollectionView.reloadData()
@@ -64,7 +67,6 @@ class NBACalenderWeekCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
     }
     
     override func awakeFromNib() {
@@ -75,7 +77,6 @@ class NBACalenderWeekCell: UITableViewCell {
         self.bubbleView.isHidden    = true
         self.backgroundColor        = UIColor.lightGray
         self.contentView.backgroundColor        = UIColor.lightGray
-        
     }
     
     override func layoutSubviews() {
@@ -83,7 +84,7 @@ class NBACalenderWeekCell: UITableViewCell {
         if let flowLayout = self.selectedModelsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.itemSize = self.selectedModelsCollectionView.frame.size
         }
-        
+        //self.weekCollectionView.
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

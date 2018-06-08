@@ -198,14 +198,5 @@ extension ShotChartCustomView: UICollectionViewDelegate, UICollectionViewDataSou
 }
 
 
-extension Int {
-    func getPeriodNameForPeriod () -> String{
-        switch (self) {
-        case 0...3:
-            return "Q\(self + 1)"
-        default:
-            return "OT\(self - 3)"
-        }
-    }
-}
+
 

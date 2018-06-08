@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HT4-dZ-Oy8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="54.5" id="iVo-H2-EuN"/>
@@ -32,7 +32,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzF-iT-ukr" customClass="BubbleArrowView" customModule="DynamicUIDemo" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="54.5" width="375" height="10"/>
+                        <rect key="frame" x="0.0" y="55" width="375" height="10"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="gzB-dx-wYo"/>
@@ -42,7 +42,7 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="140"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="140" id="hLl-Cs-pjr"/>
+                            <constraint firstAttribute="height" constant="140" id="oYD-sd-uov"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JkD-Bk-IXs">
                             <size key="itemSize" width="50" height="50"/>
@@ -66,7 +66,9 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bubbleView" destination="jzF-iT-ukr" id="2N3-Fh-mex"/>
+                <outlet property="selectedModelsCollectionConstraint" destination="oYD-sd-uov" id="VbS-mO-rmh"/>
                 <outlet property="selectedModelsCollectionView" destination="hrk-pP-7OE" id="1s5-K2-w7F"/>
+                <outlet property="weekCollectionHeightConstraint" destination="iVo-H2-EuN" id="b0C-Gb-fPW"/>
                 <outlet property="weekCollectionView" destination="HT4-dZ-Oy8" id="d3i-hn-oXW"/>
             </connections>
             <point key="canvasLocation" x="47.5" y="93"/>

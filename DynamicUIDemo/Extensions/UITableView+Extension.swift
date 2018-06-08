@@ -2,7 +2,7 @@
 //  UITableView+Extension.swift
 //  DynamicUIDemo
 //
-//  Created by Vivek Gupta on 11/05/18.
+//  Created by Vivek Gupta on 07/06/18.
 //  Copyright © 2018 Vivek Gupta. All rights reserved.
 //
 
@@ -91,4 +91,3 @@ extension UITableViewCell: ReusableView { }
 extension UITableViewHeaderFooterView: ReusableView { }
 //extension UICollectionViewCell: ReusableView { }
 extension UICollectionReusableView: ReusableView { }
-

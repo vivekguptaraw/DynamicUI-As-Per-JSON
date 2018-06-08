@@ -20,28 +20,43 @@ class NBAScheduleExpandableView: UIView {
     var sortedScheduleDate: [String]  = [String]()
     private var selectedIndexPath: IndexPath?
     private var selectedModels: [GameDetailModel]?
-    private var selectedDate: Date?
-    
+    private var selectedDate: Date?    
     private var segmentedControl: NCScrollableSegmentedControl!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.tableView = UITableView(frame: CGRect(origin: self.bounds.origin, size: self.frame.size))
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func loadData(){
+        self.createTableViewAssignDataSource()
+        self.fillMonthWiseSectionedTableView()
+        self.createTopMonthSegments()
+        self.addSegmentControlWithAutoLayout()
+        self.addTableViewWithAutoLayout()
+    }
+    
+    func createTableViewAssignDataSource(){
+        self.tableView = UITableView()
         tableView.backgroundColor = UIColor.white
         tableView.register(NBACalenderWeekCell.self)
         self.tableView.register(NBAGameScheduleHeaderView.self)
         self.tableView.delegate             = self
         self.tableView.dataSource           = self
-        
-        //
-        let json = jsonGameScheduleDict
-        for obj in json{
-            let model = GameDetailModel(json: obj)
-            gameModelsArray.append(model)
-        }
-        
-        
+    }
+    
+    func addSegmentControlWithAutoLayout(){
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        self.addConstraintsToSegmentView(parentView: self, segmentVw: segmentedControl)
+        self.addSubview(self.segmentedControl)
+    }
+    
+    func addTableViewWithAutoLayout(){
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        self.addConstraintsToTableView(parentView: self, myView: tableView)
+        self.addSubview(self.tableView)
+    }
+    
+    func fillMonthWiseSectionedTableView(){
         dateFormatter.dateFormat = "yyyy-MM"
         var gameDate    = Date()
         var lastMonth   = dateFormatter.string(from: Date())
@@ -61,7 +76,9 @@ class NBAScheduleExpandableView: UIView {
             gameDate = Calendar.current.date(byAdding: component, to: gameDate)!
         }while (firstMonth != lastMonth)
         self.tableView.reloadData()
-        
+    }
+    
+    func createTopMonthSegments(){
         segmentedControl = NCScrollableSegmentedControl()
         segmentedControl.segmentStyle = .textOnly
         let datFmt = DateFormatter()
@@ -79,18 +96,13 @@ class NBAScheduleExpandableView: UIView {
             if monthNameArray.count > 0 {
                 let monthAbbr = datFmt.shortMonthSymbols[Int(monthNameArray[1])! - 1].uppercased()
                 segmentArray.append(monthAbbr)
-              self.segmentedControl.insertSegment(withTitle: monthAbbr, at: indx)
+                self.segmentedControl.insertSegment(withTitle: monthAbbr, at: indx)
             }
         }
         self.segmentedControl.selectedSegmentIndex = 0
-        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
-        self.addConstraintsToSegmentView(parentView: self, segmentVw: segmentedControl)
-        self.addConstraintsToTableView(parentView: self, myView: tableView)
-        self.addSubview(self.segmentedControl)
-        self.addSubview(self.tableView)
-        self.segmentedControl.addTarget(self, action: #selector(NBAScheduleExpandableView.segmentSelected(sender:)), for: .valueChanged)
         self.segmentedControl.selectedSegmentContentColor = KEYCOLOR
         self.segmentedControl.segmentContentColor = UIColor.darkGray
+        self.segmentedControl.addTarget(self, action: #selector(NBAScheduleExpandableView.segmentSelected(sender:)), for: .valueChanged)
     }
     
     @objc func segmentSelected(sender: NCScrollableSegmentedControl){
@@ -182,9 +194,9 @@ extension NBAScheduleExpandableView: UITableViewDataSource{
         cell.delegate       = self
         cell.indexPath      = indexPath
         cell.weekNumber     = indexPath.row
-        //cell.collectionHeightConstraint.constant    = self.view.bounds.width / 7
+        
         if let selectedPath  = self.selectedIndexPath {
-            if selectedPath == indexPath {
+            if selectedPath == indexPath { 
                 if let selectModel = self.selectedModels {
                     cell.cellModel = selectModel
                 }
@@ -193,20 +205,21 @@ extension NBAScheduleExpandableView: UITableViewDataSource{
         if let flowLayout = cell.weekCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.itemSize = CGSize(width: (self.bounds.width - 8) / 7, height: (self.bounds.width - 8) / 7)
             flowLayout.minimumInteritemSpacing = 1
-            flowLayout.minimumLineSpacing = 1
+            flowLayout.minimumLineSpacing = 0
         }
         let mothYearArray   = self.sortedScheduleDate[indexPath.section].components(separatedBy: "-")
         cell.monthName      = mothYearArray[1]
         cell.weekDate       = self.sortedScheduleDate[indexPath.section].getFirstDate(weekNumber: indexPath.row + 1)
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let selected = self.selectedIndexPath {
             if selected == indexPath {
-                return self.bounds.width / 7 + SCHEDULEHEIGHT + 10
+                return (self.bounds.width - 8) / 7 + SCHEDULEHEIGHT + 10
             }
         }
-        return self.bounds.width / 7
+        return (self.bounds.width - 16) / 7
     }
 }
 
@@ -257,23 +270,4 @@ extension NBAScheduleExpandableView {
         return week!.upperBound - 1
     }
 }
-extension String{
-    func getFirstDate(weekNumber: Int) -> Date {
-        let calendar = Calendar.autoupdatingCurrent
-        let mothYearArray       = self.components(separatedBy: "-")
-        
-        var component           = DateComponents()
-        component.year          = Int(mothYearArray[0])
-        component.month         = Int(mothYearArray[1])
-        component.weekOfMonth   = weekNumber
-        component.weekday       = calendar.firstWeekday
-        return calendar.date(from: component)!
-    }
-    func getMonthYear() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM"
-        let date = dateFormatter.date(from: self)
-        dateFormatter.dateFormat = "MMMM YYYY"
-        return dateFormatter.string(from: date!)
-    }
-}
+

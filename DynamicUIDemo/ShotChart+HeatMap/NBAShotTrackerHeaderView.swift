@@ -9,15 +9,7 @@
 import UIKit
 import FontAwesome_swift
 
-extension UIFont{
-    func sizeOfString (string: String, constrainedToWidth width: Double) -> CGSize {
-        return NSString(string: string).boundingRect(with: CGSize(width: width, height: 9999),
-                                                     options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                                     attributes: [NSAttributedStringKey.font: self],
-                                                     context: nil).size
-    }
-    
-}
+
 
 
 var CommonfloatingFrameWidhtHeight = UIScreen.main.bounds.width > 320  ? 33: 25
