@@ -27,7 +27,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esg-kl-AEU">
-                        <rect key="frame" x="176" y="8" width="42" height="36"/>
+                        <rect key="frame" x="176" y="8" width="42" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" priority="100" constant="21" id="Dwe-Jm-cwX"/>
                             <constraint firstAttribute="width" priority="100" constant="42" id="WKR-Zl-oiW"/>
@@ -37,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53p-w1-UHC">
-                        <rect key="frame" x="0.0" y="60" width="395" height="50"/>
+                        <rect key="frame" x="0.0" y="40" width="395" height="50"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hf-nr-C1m">
                                 <rect key="frame" x="5" y="0.0" width="50" height="50"/>
@@ -163,7 +163,7 @@
                 <constraint firstItem="53p-w1-UHC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LkT-lv-DEs"/>
                 <constraint firstItem="RfS-HV-dhF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OFh-7X-u6x"/>
                 <constraint firstItem="Esg-kl-AEU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QWa-ur-RvM"/>
-                <constraint firstItem="53p-w1-UHC" firstAttribute="top" secondItem="RfS-HV-dhF" secondAttribute="bottom" constant="50" id="T5q-8w-a50"/>
+                <constraint firstItem="53p-w1-UHC" firstAttribute="top" secondItem="RfS-HV-dhF" secondAttribute="bottom" constant="30" id="T5q-8w-a50"/>
                 <constraint firstItem="53p-w1-UHC" firstAttribute="top" secondItem="Esg-kl-AEU" secondAttribute="bottom" constant="16" id="UeD-LB-xe0"/>
                 <constraint firstItem="S6r-MD-XQw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jto-cG-dHl"/>
                 <constraint firstItem="ZSA-t4-g89" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pKa-g9-1wW"/>

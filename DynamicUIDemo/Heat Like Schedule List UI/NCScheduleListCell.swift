@@ -53,6 +53,10 @@ class NCScheduleListCell: UICollectionViewCell {
             dhmTimerView.isHidden = false
             dateLabel.isHidden = true
             finalLabel.isHidden = true
+            visitorScoreLabel.text = "SAC"
+            homeScoreLabel.text = "MIA"
+            visitorTeamName.isHidden = true
+            homeTeamName.isHidden = true
             
         }else{
             buyTicketButton.isHidden = true
@@ -61,6 +65,10 @@ class NCScheduleListCell: UICollectionViewCell {
             dhmTimerView.isHidden = true
             dateLabel.isHidden = false
             finalLabel.isHidden = false
+            visitorScoreLabel.text = "85"
+            homeScoreLabel.text = "62"
+            visitorTeamName.isHidden = false
+            homeTeamName.isHidden = false
         }
     }
     

@@ -234,7 +234,7 @@
                             <constraint firstItem="oPi-rj-V43" firstAttribute="centerX" secondItem="LBi-sI-2hc" secondAttribute="centerX" id="v8v-ac-HiN"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON JUL 14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnB-Il-l7t">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON FEB 14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnB-Il-l7t">
                         <rect key="frame" x="131.5" y="25" width="167" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.85101602979274615" green="0.018230183674054028" blue="0.38760471837436017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

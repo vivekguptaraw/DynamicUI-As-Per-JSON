@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var headerAndMonthsBGcolor: UIColor = UIColor.lightGray.withAlphaComponent(0.8)
 class NCScheduleListView: UIView {
     var gameCollectionView: UICollectionView!
     var topFixedHeaderView: UIView = UIView()
@@ -24,6 +24,9 @@ class NCScheduleListView: UIView {
     let monthCollectionCellWidth: CGFloat = (UIScreen.main.bounds.width / 3) - 20
     var shoulShowMonthsView: Bool = true
     var selectedMonthIndex: Int = 0
+    var isFirstTimeMonthsShowing: Bool = true
+    var monthCollHeight: CGFloat = 140
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -32,13 +35,15 @@ class NCScheduleListView: UIView {
         self.createViewAndAddSubview()
         self.fillMonthWiseCollectionView()
         self.addCenterMonthButton()
-        self.createMonthCollectionView()
+        self.addMonthViewAfterDelay()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         centerMonthButton.sizeToFit()
-        centerMonthButton.frame = CGRect(x: (topFixedHeaderView.frame.width - centerMonthButton.frame.width) / 2, y: (topFixedHeaderView.frame.height - 30) / 2, width: centerMonthButton.frame.width, height: 30)
+        //centerMonthButton.frame = CGRect(x: (topFixedHeaderView.frame.width - centerMonthButton.frame.width) / 2, y: (topFixedHeaderView.frame.height - 30) / 2, width: centerMonthButton.frame.width, height: 30)
+        centerMonthButton.frame.size = CGSize(width: 100, height: 34)
+        centerMonthButton.center = topFixedHeaderView.center
     }
     
     func addCenterMonthButton(){
@@ -47,13 +52,31 @@ class NCScheduleListView: UIView {
     }
     
     @objc func centerMonthButtonClicked(_ sender: UIButton){
-        print(sender.tag)
-        //self.gameCollectionView.scrollToItem(at: IndexPath(item: 0 , section: sender.tag), at: .top, animated: true)
-        if let cell = monthCollectionView.cellForItem(at: IndexPath(item: sender.tag, section: 0)) as? NCMonthCollectionCell{
-            cell.layer.borderWidth = 2
-            cell.layer.borderColor = UIColor.red.cgColor
-        }
-        //self.reloadMonthCollectionVw()
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseInOut, animations: {
+            
+            self.frameExapandableAnimateableView(shoulShow: self.shoulShowMonthsView ? true: false)
+            if self.monthCollectionView != nil{
+                self.monthCollectionView.frame = CGRect(x: 0, y: 0, width: self.expandableMonthView.frame.width, height: self.shoulShowMonthsView ? self.expandableMonthView.frame.height : 0)
+            }
+            
+        }) { (bool) in
+            if self.isFirstTimeMonthsShowing{
+                self.createMonthCollectionView()
+                self.isFirstTimeMonthsShowing = false
+            }else{
+                if self.shoulShowMonthsView{
+                    self.monthCollectionView.reloadData()
+                }else{
+                    
+                }
+            }
+        }        
+        self.shoulShowMonthsView = !self.shoulShowMonthsView
+    }
+    
+    func reloadMonthCollectionWithCallback(completion: @escaping (() -> Void)){ //() -> Swift.Void
+        self.createMonthCollectionView()
+        completion()
     }
     
     func createMonthCollectionView(){
@@ -63,22 +86,26 @@ class NCScheduleListView: UIView {
         layout.minimumInteritemSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         monthCollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: expandableMonthView.frame.width, height: expandableMonthView.frame.height), collectionViewLayout: layout)
-        expandableMonthView.addSubview(monthCollectionView)
-        monthCollectionView.register(NCMonthCollectionCell.self, forCellWithReuseIdentifier: monthCellIdentifier)
-        monthCollectionView.backgroundColor = UIColor.yellow.withAlphaComponent(0.8)
-        monthCollectionView.dataSource = self
-        monthCollectionView.delegate = self
+        if monthCollectionView.superview == nil{
+            expandableMonthView.addSubview(monthCollectionView)
+        }
+        self.monthCollectionView.backgroundColor = headerAndMonthsBGcolor
+        self.monthCollectionView.register(NCMonthCollectionCell.self, forCellWithReuseIdentifier: self.monthCellIdentifier)
+        self.monthCollectionView.dataSource = self
+        self.monthCollectionView.delegate = self
+        self.reloadMonthCollectionVw()
     }
     
     func frameExapandableAnimateableView(shoulShow: Bool){
-        expandableMonthView.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
-        expandableMonthView.frame = CGRect(x: 0, y: 44, width: UIScreen.main.bounds.width, height: shoulShow ? 180 : 0)
-        self.addSubview(expandableMonthView)
+        expandableMonthView.frame = CGRect(x: 0, y: 44, width: UIScreen.main.bounds.width, height: shoulShow ? monthCollHeight : 0)
+
+//        if self.monthCollectionView != nil{
+//            self.monthCollectionView.isHidden = self.shoulShowMonthsView ? false : true
+//        }
     }
     
     func reloadMonthCollectionVw(){
         monthCollectionView.reloadData()
-    
     }
     
     func createViewAndAddSubview(){
@@ -93,8 +120,15 @@ class NCScheduleListView: UIView {
         self.addConstraintsToTableView(parentView: self, myView: gameCollectionView)
         self.addSubview(gameCollectionView)
         gameCollectionView.register(UINib(nibName: cellIdentifier , bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        
-        frameExapandableAnimateableView(shoulShow: shoulShowMonthsView)
+    }
+    
+    func addMonthViewAfterDelay(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2 ) {
+            self.frameExapandableAnimateableView(shoulShow: false)
+            self.expandableMonthView.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
+            self.addSubview(self.expandableMonthView)
+            
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -120,10 +154,22 @@ class NCScheduleListView: UIView {
             component.month = 1
             gameDate = Calendar.current.date(byAdding: component, to: gameDate)!
         }while (firstMonth != lastMonth)
-        self.centerMonthButton.setTitle(sortedScheduleDate.first ?? "", for: .normal)
+        self.centerMonthButton.setTitle(NCScheduleListView.setHeaderMonthNameAs3Alphabet(monthYear: sortedScheduleDate.first ?? ""), for: .normal)
         self.centerMonthButton.tag = 0
         self.gameCollectionView.dataSource = self
         self.gameCollectionView.reloadData()
+    }
+    
+    class func setHeaderMonthNameAs3Alphabet(monthYear: String) -> String{
+        var str = ""
+        let datFmt = DateFormatter()
+        datFmt.dateFormat = "yyyyMM"
+        let monthNameArray = monthYear.components(separatedBy: "-")
+        if monthNameArray.count > 0 {
+            let monthAbbr = datFmt.shortMonthSymbols[Int(monthNameArray[1])! - 1].uppercased()
+            str = monthAbbr
+        }
+        return str
     }
     
     
@@ -172,7 +218,7 @@ extension NCScheduleListView: NCGameScheduleListLayoutDelegate{
     }
     
     func collectionViewHeightforCell(indexPath: IndexPath) -> CGFloat {
-        if indexPath.item == 19{
+        if indexPath.item == 5{
             return normalCellHeight + 58
         }
         return normalCellHeight
@@ -202,14 +248,28 @@ extension NCScheduleListView: UICollectionViewDataSource{
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if collectionView.isEqual(monthCollectionView){
+            
+            collectionView.reloadItems(at: [indexPath])
+//            if self.isFirstTimeMonthsShowing{
+//                collectionView.reloadItems(at: [indexPath])
+//                if indexPath.item == self.sortedScheduleDate.count - 1{
+//                    self.isFirstTimeMonthsShowing = false
+//                }
+//            }
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.isEqual(gameCollectionView){
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! NCScheduleListCell
-            cell.updateConstraintsAsPerButton(indexPath: indexPath, isLast: false)
+            cell.updateConstraintsAsPerButton(indexPath: indexPath, isLast: indexPath.item == 5 ? true : false)
             return cell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: monthCellIdentifier, for: indexPath) as! NCMonthCollectionCell
-            cell.updateData(month: self.sortedScheduleDate[indexPath.item])
+            cell.indexPath = indexPath
+            cell.updateData(month: NCScheduleListView.setHeaderMonthNameAs3Alphabet(monthYear: self.sortedScheduleDate[indexPath.item]), indexPath: IndexPath(item: self.selectedMonthIndex, section: 0))
             return cell
         }
         
@@ -217,6 +277,11 @@ extension NCScheduleListView: UICollectionViewDataSource{
 }
  extension NCScheduleListView: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        self.gameCollectionView.scrollToItem(at: IndexPath(item: 0 , section: indexPath.item), at: .top, animated: true)
+        if collectionView.isEqual(monthCollectionView){
+            collectionView.reloadData()
+        }
+        self.centerMonthButton.setTitle( NCScheduleListView.setHeaderMonthNameAs3Alphabet(monthYear: self.sortedScheduleDate[indexPath.item]), for: .normal)
+        self.selectedMonthIndex = indexPath.item
     }
  }

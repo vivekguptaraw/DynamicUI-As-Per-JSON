@@ -45,6 +45,9 @@ class NBACalenderWeekCell: UITableViewCell {
             self.selectedModelsCollectionConstraint.constant = SCHEDULEHEIGHT
             self.selectedModelsCollectionView.delegate    = self
             self.selectedModelsCollectionView.dataSource  = self
+            if let flowLayout = self.selectedModelsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+                flowLayout.itemSize = self.selectedModelsCollectionView.frame.size
+            }
             self.selectedModelsCollectionView.reloadData()
         }
     }
@@ -84,7 +87,6 @@ class NBACalenderWeekCell: UITableViewCell {
         if let flowLayout = self.selectedModelsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.itemSize = self.selectedModelsCollectionView.frame.size
         }
-        //self.weekCollectionView.
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -64,7 +64,7 @@ extension RightTableHeaderView: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as RightCollectionViewCell
         cell.labelText.text = array[indexPath.row]
-        cell.labelText.textColor = UIColor.green
+        cell.labelText.textColor = UIColor.darkText
         return cell
     }
 }

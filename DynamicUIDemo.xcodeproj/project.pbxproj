@@ -276,6 +276,13 @@
 			path = "Heat Like Schedule List UI";
 			sourceTree = "<group>";
 		};
+		8034C5BC20CFC709001DC015 /* LeadersTable UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "LeadersTable UI";
+			sourceTree = "<group>";
+		};
 		E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +367,7 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8034C5BC20CFC709001DC015 /* LeadersTable UI */,
 				802F659620C9361D008C216E /* Extensions */,
 				8031237E20C80909005BBEC1 /* Heat Like Schedule List UI */,
 				8001C03820BC108E00BE7CA6 /* Kings Like Schedule Calender */,
