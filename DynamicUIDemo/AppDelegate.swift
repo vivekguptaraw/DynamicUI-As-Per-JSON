@@ -31,7 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window?.rootViewController = UINavigationController(rootViewController: NBACalenderDemoViewController()) //HRScrollDemo()) //
 //        self.window?.rootViewController = UINavigationController(rootViewController: HRScrollDemo()) //HRScrollDemo())
         //self.window?.rootViewController = UINavigationController(rootViewController: ScheduleDemoViewController())
-        self.window?.rootViewController = UINavigationController(rootViewController: NCScheduleListDemoViewController())
+        //self.window?.rootViewController = UINavigationController(rootViewController: NCScheduleListDemoViewController())
+        self.window?.rootViewController = UINavigationController(rootViewController: NCLeaderDemoViewController())
         
         self.window?.makeKeyAndVisible()
         return true
