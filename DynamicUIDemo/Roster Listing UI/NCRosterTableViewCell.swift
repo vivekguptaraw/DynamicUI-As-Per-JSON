@@ -19,18 +19,23 @@ class NCRosterTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        positionLabel.font = UIFont.systemFont(ofSize: 12)
+        positionLabel.textColor = UIColor.lightGray
+        nameLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight(rawValue: 12))
+        jaerseyNumberLabel.textColor = UIColor.lightGray
+        jaerseyNumberLabel.font = UIFont.systemFont(ofSize: 12)
     }
     
     func updatePlayerData(data: NCPlayerDataModel){
         profileImageView.image = UIImage(named: "p3")
         positionLabel.text = data.position
-        nameLabel.text = "(\(data.first_name) \(data.last_name)"
+        nameLabel.text = "\(data.first_name) \(data.last_name)"
         jaerseyNumberLabel.text = data.jersey
     }
     func updateCoachData(data: NCCoachDataModel){
         profileImageView.image = UIImage(named: "p1")
         positionLabel.text = data.position
-        nameLabel.text = "(\(data.first_name) \(data.last_name)"
+        nameLabel.text = "\(data.first_name) \(data.last_name)"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
