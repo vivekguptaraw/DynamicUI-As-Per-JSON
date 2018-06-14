@@ -23,6 +23,8 @@ class NCLeaderViewsCollectionCell: UICollectionViewCell {
     var leftButton: UIButton!
     var rightButton: UIButton!
     var arcWidth: CGFloat = 15
+    var selectedCarouselIndx: Int = 1
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = UIColor.white
@@ -37,6 +39,51 @@ class NCLeaderViewsCollectionCell: UICollectionViewCell {
         rightButton.setImage(UIImage(named: "rightArr"), for: .normal)
         viewNameLabel.textColor = UIColor.lightGray
         playerPointLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        
+        leftButton.addTarget(self, action: #selector(NCLeaderViewsCollectionCell.leftClicked(_:)), for: .touchUpInside)
+        rightButton.addTarget(self, action: #selector(NCLeaderViewsCollectionCell.rightClicked(_:)), for: .touchUpInside)
+    }
+    
+    @objc func leftClicked(_ sender: UIButton){
+        var indx = 0
+        var futureIndex = 0
+        var isAnimated: Bool = true
+        if self.selectedCarouselIndx == 1{
+            indx = self.selectedCarouselIndx - 1
+            isAnimated = false
+            futureIndex = self.leaderCaousel.dictionary.count - 2
+            self.selectedCarouselIndx = futureIndex
+        }else{
+            indx = self.selectedCarouselIndx - 1
+            self.selectedCarouselIndx = indx
+        }
+        self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: indx, section: 0), at: .left, animated: true)
+        if !isAnimated{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: futureIndex, section: 0), at: .centeredHorizontally, animated: false)
+            }
+        }
+    }
+    
+    @objc func rightClicked(_ sender: UIButton){
+        var indx = 0
+        var futureIndex = 0
+        var isAnimated: Bool = true
+        if self.selectedCarouselIndx == self.leaderCaousel.dictionary.count - 2{
+            indx = self.selectedCarouselIndx + 1
+            isAnimated = false
+            futureIndex = 1
+            self.selectedCarouselIndx = futureIndex
+        }else{
+            indx = self.selectedCarouselIndx + 1
+            self.selectedCarouselIndx = indx
+        }
+        self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: indx, section: 0), at: .left, animated: true)
+        if !isAnimated{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: futureIndex, section: 0), at: .centeredHorizontally, animated: false)
+            }
+        }
     }
     
     func updateData(data: PlayerRankViewModel){
@@ -72,8 +119,6 @@ class NCLeaderViewsCollectionCell: UICollectionViewCell {
         self.setDataOnScroll(teamStatsPD: data.playerDetail[0])
         self.leadersView.addSubview(leftButton)
         self.leadersView.addSubview(rightButton)
-        
-        
     }
     
     override func layoutSubviews() {
@@ -107,9 +152,10 @@ class NCLeaderViewsCollectionCell: UICollectionViewCell {
 }
 
 extension NCLeaderViewsCollectionCell: LeaderCarouselDelegate{
-    func currentIndexPath(indexPath: IndexPath) {
+    func currentIndexPath(indexPath: IndexPath, virtualIndexPath: IndexPath) {
         if let data = cellData{
            self.setDataOnScroll(teamStatsPD: data.playerDetail[indexPath.item])
+           self.selectedCarouselIndx = virtualIndexPath.item
         }
     }
     

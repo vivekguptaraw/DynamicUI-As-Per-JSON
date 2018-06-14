@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LeaderCarouselDelegate {
-    func currentIndexPath(indexPath: IndexPath)
+    func currentIndexPath(indexPath: IndexPath,virtualIndexPath: IndexPath)
 }
 
 
@@ -58,7 +58,7 @@ class NCLeaderCarouselView: UIView {
             self.dictionary = tmp
         }
     }
-    
+    var lastContentOffset: CGFloat = 0
 }
 
 extension NCLeaderCarouselView : UICollectionViewDelegate{
@@ -67,34 +67,12 @@ extension NCLeaderCarouselView : UICollectionViewDelegate{
         print("did end dragging")
     }
     
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        print("end dragging")
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        lastContentOffset = scrollView.contentOffset.x
     }
     
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        let contentOffsetWhenFullyScrolledRight = self.leaderCollectionView.frame.size.width * CGFloat(self.dictionary.count - 1)
-        if scrollView.contentOffset.x == contentOffsetWhenFullyScrolledRight{
-            let indexPath = IndexPath(item: 1, section: 0)
-            self.leaderCollectionView.scrollToItem(at: indexPath, at: .left, animated: false)
-        }else if scrollView.contentOffset.x == 0{
-            let indexPath = IndexPath(item: self.dictionary.count - 2, section: 0)
-            self.leaderCollectionView.scrollToItem(at: indexPath, at: .left, animated: false)
-        }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        if scrollView.isEqual(self.leaderCollectionView){
-            for indx in self.leaderCollectionView.indexPathsForVisibleItems{
-                var itemNum = indx.item
-                if indx.item == 0{
-                    itemNum = self.dictionary.count - 3
-                }else if indx.item == self.dictionary.count - 1{
-                    itemNum = 0
-                }else{
-                    itemNum -= 1
-                }
-                delegate?.currentIndexPath(indexPath: IndexPath(item: itemNum, section: 0))
-                
-            }
-        }
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -119,8 +97,8 @@ extension NCLeaderCarouselView : UICollectionViewDelegate{
                 }else{
                     itemNum -= 1                    
                 }
-                print("actual    \(itemNum)")
-                delegate?.currentIndexPath(indexPath: IndexPath(item: itemNum, section: 0))
+            
+            delegate?.currentIndexPath(indexPath: IndexPath(item: itemNum, section: 0), virtualIndexPath: _indexPath)
         }
     }
     
