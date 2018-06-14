@@ -53,11 +53,14 @@ class NCLeaderViewsCollectionCell: UICollectionViewCell {
             isAnimated = false
             futureIndex = self.leaderCaousel.dictionary.count - 2
             self.selectedCarouselIndx = futureIndex
+            self.setDataOnScroll(teamStatsPD: cellData!.playerDetail[futureIndex - 1])
         }else{
             indx = self.selectedCarouselIndx - 1
             self.selectedCarouselIndx = indx
+            self.setDataOnScroll(teamStatsPD: cellData!.playerDetail[self.selectedCarouselIndx - 1])
         }
         self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: indx, section: 0), at: .left, animated: true)
+        
         if !isAnimated{
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                 self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: futureIndex, section: 0), at: .centeredHorizontally, animated: false)
@@ -74,9 +77,11 @@ class NCLeaderViewsCollectionCell: UICollectionViewCell {
             isAnimated = false
             futureIndex = 1
             self.selectedCarouselIndx = futureIndex
+            self.setDataOnScroll(teamStatsPD: cellData!.playerDetail[futureIndex - 1])
         }else{
             indx = self.selectedCarouselIndx + 1
             self.selectedCarouselIndx = indx
+            self.setDataOnScroll(teamStatsPD: cellData!.playerDetail[self.selectedCarouselIndx - 1])
         }
         self.leaderCaousel.leaderCollectionView.scrollToItem(at: IndexPath(item: indx, section: 0), at: .left, animated: true)
         if !isAnimated{
