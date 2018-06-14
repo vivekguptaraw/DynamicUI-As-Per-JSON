@@ -49,6 +49,12 @@
 		803A9E1E20B7D97600D98091 /* NBADateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1D20B7D97600D98091 /* NBADateModel.swift */; };
 		803A9E2020B7DEE900D98091 /* NBACalenderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */; };
 		803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */; };
+		803C343920D26F79006D3EB2 /* NCPlayerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C343820D26F79006D3EB2 /* NCPlayerDataModel.swift */; };
+		803C343B20D27203006D3EB2 /* NCRosterListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C343A20D27203006D3EB2 /* NCRosterListUI.swift */; };
+		803C343E20D274EC006D3EB2 /* NCRosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C343C20D274EC006D3EB2 /* NCRosterTableViewCell.swift */; };
+		803C343F20D274EC006D3EB2 /* NCRosterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 803C343D20D274EC006D3EB2 /* NCRosterTableViewCell.xib */; };
+		803C344120D27F21006D3EB2 /* GameScheduleListWithBuyTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = 803C344020D27F21006D3EB2 /* GameScheduleListWithBuyTicket.png */; };
+		803C344320D2891D006D3EB2 /* NCRosterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C344220D2891D006D3EB2 /* NCRosterDemoViewController.swift */; };
 		803DFBE920CA868300C94300 /* NCMonthCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803DFBE820CA868300C94300 /* NCMonthCollectionCell.swift */; };
 		8051D1F320C65F5300885A4F /* NBAGameScheduleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051D1F220C65F5300885A4F /* NBAGameScheduleHeaderView.swift */; };
 		8051D1F520C65F6600885A4F /* NBAGameScheduleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8051D1F420C65F6600885A4F /* NBAGameScheduleHeaderView.xib */; };
@@ -147,6 +153,12 @@
 		803A9E1D20B7D97600D98091 /* NBADateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBADateModel.swift; sourceTree = "<group>"; };
 		803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderViewLayout.swift; sourceTree = "<group>"; };
 		803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderDemoViewController.swift; sourceTree = "<group>"; };
+		803C343820D26F79006D3EB2 /* NCPlayerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPlayerDataModel.swift; sourceTree = "<group>"; };
+		803C343A20D27203006D3EB2 /* NCRosterListUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCRosterListUI.swift; sourceTree = "<group>"; };
+		803C343C20D274EC006D3EB2 /* NCRosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCRosterTableViewCell.swift; sourceTree = "<group>"; };
+		803C343D20D274EC006D3EB2 /* NCRosterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NCRosterTableViewCell.xib; sourceTree = "<group>"; };
+		803C344020D27F21006D3EB2 /* GameScheduleListWithBuyTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameScheduleListWithBuyTicket.png; sourceTree = "<group>"; };
+		803C344220D2891D006D3EB2 /* NCRosterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCRosterDemoViewController.swift; sourceTree = "<group>"; };
 		803DFBE820CA868300C94300 /* NCMonthCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCMonthCollectionCell.swift; sourceTree = "<group>"; };
 		8051D1F220C65F5300885A4F /* NBAGameScheduleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAGameScheduleHeaderView.swift; sourceTree = "<group>"; };
 		8051D1F420C65F6600885A4F /* NBAGameScheduleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NBAGameScheduleHeaderView.xib; sourceTree = "<group>"; };
@@ -294,6 +306,7 @@
 				802F65B120C93A20008C216E /* NCScheduleListCell.xib */,
 				802F65B420C96A28008C216E /* NCGameScheduleListLayout.swift */,
 				803DFBE820CA868300C94300 /* NCMonthCollectionCell.swift */,
+				803C344020D27F21006D3EB2 /* GameScheduleListWithBuyTicket.png */,
 			);
 			path = "Heat Like Schedule List UI";
 			sourceTree = "<group>";
@@ -314,6 +327,18 @@
 				80305EEC20D13F74009BB3EF /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png */,
 			);
 			path = "LeadersTable UI";
+			sourceTree = "<group>";
+		};
+		803C343720D26F57006D3EB2 /* Roster Listing UI */ = {
+			isa = PBXGroup;
+			children = (
+				803C343820D26F79006D3EB2 /* NCPlayerDataModel.swift */,
+				803C343A20D27203006D3EB2 /* NCRosterListUI.swift */,
+				803C343C20D274EC006D3EB2 /* NCRosterTableViewCell.swift */,
+				803C343D20D274EC006D3EB2 /* NCRosterTableViewCell.xib */,
+				803C344220D2891D006D3EB2 /* NCRosterDemoViewController.swift */,
+			);
+			path = "Roster Listing UI";
 			sourceTree = "<group>";
 		};
 		E21D7AA320A95FA000BBF8C8 /* ShotChart+HeatMap */ = {
@@ -400,6 +425,7 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				803C343720D26F57006D3EB2 /* Roster Listing UI */,
 				8034C5BC20CFC709001DC015 /* LeadersTable UI */,
 				802F659620C9361D008C216E /* Extensions */,
 				8031237E20C80909005BBEC1 /* Heat Like Schedule List UI */,
@@ -509,6 +535,7 @@
 				8001C03F20BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.05.png in Resources */,
 				8001C04020BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.02.34.png in Resources */,
 				E27726DD20B2B06100566D32 /* QuarterViewCell.xib in Resources */,
+				803C343F20D274EC006D3EB2 /* NCRosterTableViewCell.xib in Resources */,
 				E2858DCD20A5C05200F6D6EA /* RightTableViewCell.xib in Resources */,
 				802F653720C91206008C216E /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-07 at 12.40.48.png in Resources */,
 				E21D7AA720A9684A00BBF8C8 /* RightTableHeaderView.xib in Resources */,
@@ -516,6 +543,7 @@
 				E262C19D2088744D00FBABC7 /* UIdataJson.json in Resources */,
 				E2E161332087588E00F5B9CE /* LaunchScreen.storyboard in Resources */,
 				E2E161302087588E00F5B9CE /* Assets.xcassets in Resources */,
+				803C344120D27F21006D3EB2 /* GameScheduleListWithBuyTicket.png in Resources */,
 				8001C04220BC125D00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.01.54.png in Resources */,
 				8001C03A20BC11CA00BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.00.10.png in Resources */,
 				E2E1612B2087588E00F5B9CE /* Main.storyboard in Resources */,
@@ -573,10 +601,12 @@
 				8031237920C7A71A005BBEC1 /* NBAGameDetailViewModel.swift in Sources */,
 				8034C5D220CFFD32001DC015 /* NCPieChartItem.swift in Sources */,
 				8037507A20BD38CA00503E9A /* ScheduleDemoViewController.swift in Sources */,
+				803C344320D2891D006D3EB2 /* NCRosterDemoViewController.swift in Sources */,
 				802F65B520C96A28008C216E /* NCGameScheduleListLayout.swift in Sources */,
 				802F65B220C93A20008C216E /* NCScheduleListCell.swift in Sources */,
 				E26AA0B5208F1A4E00E91C45 /* DynamicViewController.swift in Sources */,
 				E26AA0B0208F02BF00E91C45 /* Groupable.swift in Sources */,
+				803C343920D26F79006D3EB2 /* NCPlayerDataModel.swift in Sources */,
 				8051D1F820C670EF00885A4F /* NBAGameScheduleCollCell.swift in Sources */,
 				8037508020BD787400503E9A /* NBACalenderDateCell.swift in Sources */,
 				E2858DC420A5C05200F6D6EA /* BiDirectionalViewController.swift in Sources */,
@@ -584,9 +614,11 @@
 				E27726CE20B28A9500566D32 /* HeatMapView.m in Sources */,
 				E26AA0B1208F02BF00E91C45 /* Enums.swift in Sources */,
 				E262C19F20887E1700FBABC7 /* ScreenViewController.swift in Sources */,
+				803C343E20D274EC006D3EB2 /* NCRosterTableViewCell.swift in Sources */,
 				8034C5D020CFFCF4001DC015 /* NCPieChartView.swift in Sources */,
 				E28B7A1720A05055005E4871 /* WithoutTableViewController.swift in Sources */,
 				E2858DC720A5C05200F6D6EA /* HRScrollTableView.swift in Sources */,
+				803C343B20D27203006D3EB2 /* NCRosterListUI.swift in Sources */,
 				8034C5C020CFCB71001DC015 /* NCPlayerRankViewModel.swift in Sources */,
 				803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */,
 				802F659820C93640008C216E /* UIColor+Extension.swift in Sources */,
