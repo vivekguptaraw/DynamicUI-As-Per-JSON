@@ -132,10 +132,6 @@ extension NBACalenderWeekCell: UICollectionViewDataSource{
                 if self.cellModel.count > indexPath.row {
 //                    if let gameModel = self.cellModel[indexPath.row] as? GameDetails {
 //                        cell.gameViewModel = GameDetailsViewModel(game: gameModel)
-//                        cell.dateScoreContraint.constant = cell.gameViewModel!.shoulShowBuyTicket ? 5: 30
-//                        cell.radioAndGetTixButton.setTitleColor(ThemeManager.currentTheme.kingsDarkGray, for: UIControlState.normal)
-//                        cell.radioAndGetTixButton.setTitleColor(ThemeManager.currentTheme.kingsPurple, for: UIControlState.selected)
-//
                         self.bubbleView.fillColor = UIColor.red
                     //}
                 }

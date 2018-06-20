@@ -7,7 +7,12 @@
 //
 
 import Foundation
-
+//MARK: Caching dewmo list
+let arrayImages: [String] = [
+"file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg",
+"file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg",
+"file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg","file:///Users/vivekgupta/Desktop/Projects/DynamicUI/DynamicUI-As-Per-JSON/DynamicUIDemo/ImageDownloader/kings12.jpg",
+]
 
 //MARK: GameSchedule array
 let jsonGameScheduleDict: [[String: Any]] =

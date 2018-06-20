@@ -29,6 +29,10 @@
 		802F65B320C93A20008C216E /* NCScheduleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 802F65B120C93A20008C216E /* NCScheduleListCell.xib */; };
 		802F65B520C96A28008C216E /* NCGameScheduleListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F65B420C96A28008C216E /* NCGameScheduleListLayout.swift */; };
 		80305EED20D13F75009BB3EF /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png in Resources */ = {isa = PBXBuildFile; fileRef = 80305EEC20D13F74009BB3EF /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png */; };
+		80311A1720D90A3D00815965 /* NCCachingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80311A1620D90A3D00815965 /* NCCachingTableViewController.swift */; };
+		80311A1A20D90B6900815965 /* NCCachingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80311A1820D90B6900815965 /* NCCachingTableViewCell.swift */; };
+		80311A1B20D90B6900815965 /* NCCachingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80311A1920D90B6900815965 /* NCCachingTableViewCell.xib */; };
+		80311A1E20D9296100815965 /* NCVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80311A1D20D9296100815965 /* NCVideoPlayerController.swift */; };
 		8031237920C7A71A005BBEC1 /* NBAGameDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031237820C7A71A005BBEC1 /* NBAGameDetailViewModel.swift */; };
 		8031237B20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031237A20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift */; };
 		8034C5BE20CFC78E001DC015 /* NCLeaderCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8034C5BD20CFC78E001DC015 /* NCLeaderCarouselView.swift */; };
@@ -48,6 +52,14 @@
 		8037508020BD787400503E9A /* NBACalenderDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8037507F20BD787400503E9A /* NBACalenderDateCell.swift */; };
 		803967DA20D772440087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.06.png in Resources */ = {isa = PBXBuildFile; fileRef = 803967D820D772430087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.06.png */; };
 		803967DB20D772440087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 803967D920D772440087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.08.png */; };
+		803967DE20D789FB0087295F /* NCImageLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803967DD20D789FB0087295F /* NCImageLoadManager.swift */; };
+		803967E020D7939E0087295F /* NCImageDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803967DF20D7939E0087295F /* NCImageDownloadOperation.swift */; };
+		803967E220D793F70087295F /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803967E120D793F70087295F /* Data+Extension.swift */; };
+		803967E420D79F7F0087295F /* NCImageDwnldDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803967E320D79F7F0087295F /* NCImageDwnldDemoController.swift */; };
+		803967E620D7B2C80087295F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803967E520D7B2C80087295F /* UIImageView+Extension.swift */; };
+		803967E820D7C4E90087295F /* birds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 803967E720D7C4E80087295F /* birds.jpg */; };
+		803967EA20D7D5ED0087295F /* kings12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 803967E920D7D5ED0087295F /* kings12.jpg */; };
+		803967EC20D7E8770087295F /* NCImageLoadmanagerNSCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803967EB20D7E8770087295F /* NCImageLoadmanagerNSCache.swift */; };
 		803A9E1E20B7D97600D98091 /* NBADateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1D20B7D97600D98091 /* NBADateModel.swift */; };
 		803A9E2020B7DEE900D98091 /* NBACalenderViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */; };
 		803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */; };
@@ -135,6 +147,10 @@
 		802F65B120C93A20008C216E /* NCScheduleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NCScheduleListCell.xib; sourceTree = "<group>"; };
 		802F65B420C96A28008C216E /* NCGameScheduleListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCGameScheduleListLayout.swift; sourceTree = "<group>"; };
 		80305EEC20D13F74009BB3EF /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png"; sourceTree = "<group>"; };
+		80311A1620D90A3D00815965 /* NCCachingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCCachingTableViewController.swift; sourceTree = "<group>"; };
+		80311A1820D90B6900815965 /* NCCachingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCCachingTableViewCell.swift; sourceTree = "<group>"; };
+		80311A1920D90B6900815965 /* NCCachingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NCCachingTableViewCell.xib; sourceTree = "<group>"; };
+		80311A1D20D9296100815965 /* NCVideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCVideoPlayerController.swift; sourceTree = "<group>"; };
 		8031237820C7A71A005BBEC1 /* NBAGameDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAGameDetailViewModel.swift; sourceTree = "<group>"; };
 		8031237A20C7B9AC005BBEC1 /* NCScrollableSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCScrollableSegmentControl.swift; sourceTree = "<group>"; };
 		8034C5BD20CFC78E001DC015 /* NCLeaderCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCLeaderCarouselView.swift; sourceTree = "<group>"; };
@@ -154,6 +170,14 @@
 		8037507F20BD787400503E9A /* NBACalenderDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderDateCell.swift; sourceTree = "<group>"; };
 		803967D820D772430087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.06.png"; sourceTree = "<group>"; };
 		803967D920D772440087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.08.png"; sourceTree = "<group>"; };
+		803967DD20D789FB0087295F /* NCImageLoadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCImageLoadManager.swift; sourceTree = "<group>"; };
+		803967DF20D7939E0087295F /* NCImageDownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCImageDownloadOperation.swift; sourceTree = "<group>"; };
+		803967E120D793F70087295F /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		803967E320D79F7F0087295F /* NCImageDwnldDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCImageDwnldDemoController.swift; sourceTree = "<group>"; };
+		803967E520D7B2C80087295F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		803967E720D7C4E80087295F /* birds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = birds.jpg; sourceTree = "<group>"; };
+		803967E920D7D5ED0087295F /* kings12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kings12.jpg; sourceTree = "<group>"; };
+		803967EB20D7E8770087295F /* NCImageLoadmanagerNSCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCImageLoadmanagerNSCache.swift; sourceTree = "<group>"; };
 		803A9E1D20B7D97600D98091 /* NBADateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBADateModel.swift; sourceTree = "<group>"; };
 		803A9E1F20B7DEE900D98091 /* NBACalenderViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderViewLayout.swift; sourceTree = "<group>"; };
 		803A9E2120B7E00A00D98091 /* NBACalenderDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBACalenderDemoViewController.swift; sourceTree = "<group>"; };
@@ -297,8 +321,18 @@
 				802F659D20C936CA008C216E /* Int+Extension.swift */,
 				802F659F20C936F5008C216E /* UIFont+Extension.swift */,
 				802F65AC20C937DC008C216E /* UITableView+Extension.swift */,
+				803967E120D793F70087295F /* Data+Extension.swift */,
+				803967E520D7B2C80087295F /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80311A1C20D9294000815965 /* Video Player */ = {
+			isa = PBXGroup;
+			children = (
+				80311A1D20D9296100815965 /* NCVideoPlayerController.swift */,
+			);
+			path = "Video Player";
 			sourceTree = "<group>";
 		};
 		8031237E20C80909005BBEC1 /* Heat Like Schedule List UI */ = {
@@ -331,6 +365,22 @@
 				80305EEC20D13F74009BB3EF /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png */,
 			);
 			path = "LeadersTable UI";
+			sourceTree = "<group>";
+		};
+		803967DC20D784480087295F /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				803967DD20D789FB0087295F /* NCImageLoadManager.swift */,
+				803967DF20D7939E0087295F /* NCImageDownloadOperation.swift */,
+				803967E320D79F7F0087295F /* NCImageDwnldDemoController.swift */,
+				803967E920D7D5ED0087295F /* kings12.jpg */,
+				803967E720D7C4E80087295F /* birds.jpg */,
+				803967EB20D7E8770087295F /* NCImageLoadmanagerNSCache.swift */,
+				80311A1620D90A3D00815965 /* NCCachingTableViewController.swift */,
+				80311A1820D90B6900815965 /* NCCachingTableViewCell.swift */,
+				80311A1920D90B6900815965 /* NCCachingTableViewCell.xib */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 		803C343720D26F57006D3EB2 /* Roster Listing UI */ = {
@@ -431,6 +481,8 @@
 		E2E161242087588E00F5B9CE /* DynamicUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				80311A1C20D9294000815965 /* Video Player */,
+				803967DC20D784480087295F /* ImageDownloader */,
 				803C343720D26F57006D3EB2 /* Roster Listing UI */,
 				8034C5BC20CFC709001DC015 /* LeadersTable UI */,
 				802F659620C9361D008C216E /* Extensions */,
@@ -533,9 +585,12 @@
 				E2858DC920A5C05200F6D6EA /* LeftTableViewCell.xib in Resources */,
 				E2858DCB20A5C05200F6D6EA /* RightCollectionViewCell.xib in Resources */,
 				8001C04420BC12B400BE7CA6 /* Simulator Screen Shot - iPhone 8 Plus - 2018-05-28 at 16.03.54.png in Resources */,
+				803967EA20D7D5ED0087295F /* kings12.jpg in Resources */,
 				8051D1FB20C6B26600885A4F /* NBACalenderWeekCell.xib in Resources */,
+				803967E820D7C4E90087295F /* birds.jpg in Resources */,
 				802F65B320C93A20008C216E /* NCScheduleListCell.xib in Resources */,
 				803967DA20D772440087295F /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-18 at 10.23.06.png in Resources */,
+				80311A1B20D90B6900815965 /* NCCachingTableViewCell.xib in Resources */,
 				80305EED20D13F75009BB3EF /* Simulator Screen Shot - iPhone 8 Plus - 2018-06-13 at 17.32.38.png in Resources */,
 				8034C5C420CFD272001DC015 /* NCCarouselCollectionViewCell.xib in Resources */,
 				8051D1F520C65F6600885A4F /* NBAGameScheduleHeaderView.xib in Resources */,
@@ -604,7 +659,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80311A1A20D90B6900815965 /* NCCachingTableViewCell.swift in Sources */,
+				80311A1E20D9296100815965 /* NCVideoPlayerController.swift in Sources */,
 				8034C5C620CFD927001DC015 /* NCLeadersControlView.swift in Sources */,
+				803967E020D7939E0087295F /* NCImageDownloadOperation.swift in Sources */,
 				8037507E20BD40A300503E9A /* BubbleArrowView.swift in Sources */,
 				8031237920C7A71A005BBEC1 /* NBAGameDetailViewModel.swift in Sources */,
 				8034C5D220CFFD32001DC015 /* NCPieChartItem.swift in Sources */,
@@ -629,8 +687,10 @@
 				803C343B20D27203006D3EB2 /* NCRosterListUI.swift in Sources */,
 				8034C5C020CFCB71001DC015 /* NCPlayerRankViewModel.swift in Sources */,
 				803A9E2220B7E00A00D98091 /* NBACalenderDemoViewController.swift in Sources */,
+				80311A1720D90A3D00815965 /* NCCachingTableViewController.swift in Sources */,
 				802F659820C93640008C216E /* UIColor+Extension.swift in Sources */,
 				E26AA0B2208F02BF00E91C45 /* Anchorable.swift in Sources */,
+				803967DE20D789FB0087295F /* NCImageLoadManager.swift in Sources */,
 				802F65A020C936F5008C216E /* UIFont+Extension.swift in Sources */,
 				8034C5BE20CFC78E001DC015 /* NCLeaderCarouselView.swift in Sources */,
 				802F659C20C936A4008C216E /* Date+Extension.swift in Sources */,
@@ -649,6 +709,7 @@
 				E27726D420B28B5000566D32 /* NBAShotTrackerHeaderView.swift in Sources */,
 				E262C1A32088966100FBABC7 /* ControlCreateModel.swift in Sources */,
 				E26AA0B3208F02BF00E91C45 /* Alignable.swift in Sources */,
+				803967EC20D7E8770087295F /* NCImageLoadmanagerNSCache.swift in Sources */,
 				E2E161282087588E00F5B9CE /* ViewController.swift in Sources */,
 				803A9E2020B7DEE900D98091 /* NBACalenderViewLayout.swift in Sources */,
 				E2858DC620A5C05200F6D6EA /* HRScrollDemo.swift in Sources */,
@@ -656,6 +717,7 @@
 				E26806372091F7F700F201CA /* CustomGeneratedView.swift in Sources */,
 				E2858DCC20A5C05200F6D6EA /* RightTableViewCell.swift in Sources */,
 				E2858DC520A5C05200F6D6EA /* horizontalFLowLayout.swift in Sources */,
+				803967E620D7B2C80087295F /* UIImageView+Extension.swift in Sources */,
 				E2858DCA20A5C05200F6D6EA /* RightCollectionViewCell.swift in Sources */,
 				803DFBE920CA868300C94300 /* NCMonthCollectionCell.swift in Sources */,
 				801280A020B6DDB800776F65 /* CalenderCell.swift in Sources */,
@@ -671,7 +733,9 @@
 				E27726DE20B2B06100566D32 /* QuarterViewCell.swift in Sources */,
 				801F566220B6CDBD00C532BB /* NBAScheduleCalenderView.swift in Sources */,
 				E27726D820B296F500566D32 /* ShotChartControlView.swift in Sources */,
+				803967E220D793F70087295F /* Data+Extension.swift in Sources */,
 				E27726DA20B2AABA00566D32 /* ShotChartViewController.swift in Sources */,
+				803967E420D79F7F0087295F /* NCImageDwnldDemoController.swift in Sources */,
 				8034C5CB20CFE66E001DC015 /* NCLeaderViewsCollectionCell.swift in Sources */,
 				E27726E220B2FDD200566D32 /* ShotChartCustomView.swift in Sources */,
 				8001C04620BC131600BE7CA6 /* NBAScheduleExpandableView.swift in Sources */,

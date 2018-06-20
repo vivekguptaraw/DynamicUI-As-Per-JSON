@@ -7,5 +7,6 @@
 #define DynamicUIDemo-Bridging-Header_h
 
 #import "HeatMapView.h"
+#import <CommonCrypto/CommonHMAC.h>
 
 #endif

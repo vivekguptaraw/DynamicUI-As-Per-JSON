@@ -33,7 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.window?.rootViewController = UINavigationController(rootViewController: ScheduleDemoViewController())
         //self.window?.rootViewController = UINavigationController(rootViewController: NCScheduleListDemoViewController())
 //        self.window?.rootViewController = UINavigationController(rootViewController: NCLeaderDemoViewController())
-        self.window?.rootViewController = UINavigationController(rootViewController: NCRosterDemoViewController())
+//        self.window?.rootViewController = UINavigationController(rootViewController: NCRosterDemoViewController())
+//         self.window?.rootViewController = UINavigationController(rootViewController: NCImageDwnldDemoController())
+        //self.window?.rootViewController = UINavigationController(rootViewController: NCCachingTableViewController())
+        self.window?.rootViewController = UINavigationController(rootViewController: NCVideoPlayerController())
         
         self.window?.makeKeyAndVisible()
         return true

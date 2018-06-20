@@ -1,6 +1,6 @@
 //
 //  ShotTrackerHeaderView.swift
-//  Kings
+
 //
 //  Created by Vivek Gupta on 15/05/18.
 //  Copyright © 2018 built.io. All rights reserved.
